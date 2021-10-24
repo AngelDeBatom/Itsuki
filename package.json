@@ -1,0 +1,19 @@
+{
+  "name": "teo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "angel",
+  "license": "ISC",
+  "dependencies": {
+    "aoi.js": "^4.5.0",
+    "aoijs.firebase": "^1.0.4",
+    "express": "^4.17.1",
+    "node-opus": "^0.3.3",
+    "opus": "0.0.0",
+    "ytdl-core": "^4.9.1"
+  }
+}
