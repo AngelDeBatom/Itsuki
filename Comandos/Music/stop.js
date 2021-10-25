@@ -1,5 +1,6 @@
 module.exports = {
 name: "stop",
+aliases: ["st"],
 description: "Parar de tocar uma música!",
 code: `
 $stopSong

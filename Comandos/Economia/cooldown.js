@@ -12,7 +12,7 @@ Use $getServerVar[prefix]daily$else$replaceText[$replaceText[$replaceText[$repla
 Use $getServerVar[prefix]fish$else$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$getCooldownTime[2m;globalUser;fish;$authorID];minutes;Minutos];seconds;Segundos];hours;Horas];and;e];second;Segundo];minute;Minuto];hour;Hora]$endif ]\`***
 }]
 
-$suppressErrors[<:errado:895110700500934667> » **$username**, algo deu errado ao executar o comando. Provavelmente estou sem a permissão ***\`[ Usar Emojis Externos ]\`***!]
+$suppressErrors[<:errado:895110700500934667> » **$username**, algo deu errado ao executar o comando!]
 $globalCooldown[5s;<:errado:895110700500934667> » **$username**, calma ai apressadinho espere ***\`[ $replaceText[$replaceText[$getCooldownTime[5s;globalUser;cooldown;$authorID];seconds;Segundos];second;Segundo] ]\`*** para executar o comando novamente!]
 `
 }

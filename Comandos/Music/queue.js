@@ -3,7 +3,7 @@ name: "queue",
 aliases: ["q"],
 description: "Ver a lista de música que está tocando!",
 code: `
-$reply[
+$reply[$messageID;
 \`\`\`
 $queue
 \`\`\`

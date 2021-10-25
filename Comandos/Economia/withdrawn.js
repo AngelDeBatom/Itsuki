@@ -29,7 +29,7 @@ $onlyIf[$getGlobalUserVar[paypal;$authorID]>0;<:errado:895110700500934667> » **
 $onlyIf[$checkContains[$message;-;+]!=true;<:errado:895110700500934667> » **$username**, você não pode inserir nenhum carácter muito menos sacar números negativos!]
 $endif
 
-$suppressErrors[<:errado:895110700500934667> » **$username**, algo deu errado ao executar o comando. Provavelmente estou sem a permissão ***\`[ Usar Emojis Externos ]\`***!]
+$suppressErrors[<:errado:895110700500934667> » **$username**, algo deu errado ao executar o comando!]
 $globalCooldown[5s;<:errado:895110700500934667> » **$username**, calma ai apressadinho espere ***\`[ $replaceText[$replaceText[$getCooldownTime[5s;globalUser;withdrawn;$authorID];seconds;Segundos];second;Segundo] ]\`*** para executar o comando novamente!]
 `
 }

@@ -10,9 +10,7 @@ app.listen(process.env.PORT); // Recebe solicitações que o deixa online
 
 
 const aoijs = require("aoi.js");
-
 const a = require("aoijs.firebase");
-
 const db = a.create({
   apiKey: "AIzaSyBALK_q3_Yduojk57-3jN51PqE7_micn7k",
   authDomain: "teo-database.firebaseapp.com",
@@ -37,6 +35,8 @@ bot.onInteractionCreate();
 bot.onJoined();
 
 bot.variables({
+pet: "Cachorro",
+petname: "Sem Nome",
 welcomemsg: "Olá {user.mention}, seja bem-vindo(a) ao {guild.name}`({guild.id})`.",
 welcomech: "",
 muted: "",
@@ -52,7 +52,6 @@ vara: "1",
 lvl: "0",
 xp: "0",
 rxp: "100",
-banner: "https://giphy.com/gifs/video-game-among-us-computer-RtdRhc7TxBxB0YAsK6",
 hotel: "false",
 quartos: "0",
 funcionarios: "0",
@@ -82,6 +81,7 @@ type: "STREAMING",
 status: "idle",
 time: 12
 })
+
 
 
 

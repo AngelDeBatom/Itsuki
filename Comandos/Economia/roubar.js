@@ -20,6 +20,7 @@ Total: ***\`[ $sum[$getGlobalUserVar[téocoins;$authorID];$random[0;750]] TéoCo
 $addField[$username[$mentioned[1]];
 Total: ***\`[ $sub[$getGlobalUserVar[téocoins;$mentioned[1]];$random[0;750]] TéoCoins e $sub[$getGlobalUserVar[xp;$mentioned[1]];$random[50;75]] XP ]\`***
 ]]
+$globalCooldown[6h;<:errado:895110700500934667> » **$username**, aguarde ***\`[ $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$getCooldownTime[6h;globalUser;roubar;$authorID];minutes;Minutos];seconds;Segundos];hours;Horas];and;e];second;Segundo] ]\`*** para roubar alguém novamente!]
 $onlyIf[$getGlobalUserVar[téocoins;$authorID]>=750;<:errado:895110700500934667> » **$username**, você precisa conter pelo menos ***\`[ 750 TéoCoins ]\`***.]
 $onlyIf[$getGlobalUserVar[xp;$authorID]>=75;<:errado:895110700500934667> » **$username**, você precisa conter pelo menos ***\`[ 75 XP ]\`*** para roubar alguém!]
 $onlyIf[$getGlobalUserVar[xp;$mentioned[1]]>=25;<:errado:895110700500934667> » **$username**, ele precisa conter pelo menos ***\`[ 25 XP ]\`***!]
@@ -27,7 +28,6 @@ $onlyIf[$getGlobalUserVar[téocoins;$mentioned[1]]>=750;<:errado:895110700500934
 $onlyIf[$isBot[$mentioned[1;yes]]!=true;<:errado:895110700500934667> » **$username**, você não pode roubar bots de discord!]
 $onlyIf[$mentioned[1]!=$authorID;<:errado:895110700500934667> » **$username**, você não pode roubar a si mesmo!]
 $onlyIf[$mentioned[1]!=;<:errado:895110700500934667> » **$username**, mencione alguém para roubar!]
-
-$suppressErrors[<:errado:895110700500934667> » **$username**, algo deu errado ao executar o comando. Provavelmente estou sem a permissão ***\`[ Usar Emojis Externos ]\`***!]
-$onlyforids[$getServerVar[devs];Manutenção]`
+$suppressErrors[<:errado:895110700500934667> » **$username**, algo deu errado ao executar o comando!]
+`
 }

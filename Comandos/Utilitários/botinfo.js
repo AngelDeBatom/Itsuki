@@ -22,7 +22,7 @@ Ao total, tenho \`[ $abbreviate[$getVar[comandos]] ]\` comando que foram executa
 > » Total de servidores que estou: ***\`[ $serverCount ]\`***
 <:hospedagem:899694155205345290> **Hospedagem**
 > » Database ***\`[ FireBase ]\`***
-> » Serviço de Ping ***\`[ UptimeRobot ]\`***
+> » Host ***\`[ Heroku ]\`***
 <:estatistica:897548336905723905> **Estatísticas**
 > » Uptime ***\`[ $uptime ]\`***
 > » Ping ***\`[ $pingms ]\`***
