@@ -35,6 +35,8 @@ bot.onInteractionCreate();
 bot.onJoined();
 
 bot.variables({
+casadoauthor: "",
+casadocom: "",
 casado: "",
 color: "e2f038",
 emojie: "<:zenitsu_crying:903753184709849158>",
