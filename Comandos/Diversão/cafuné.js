@@ -15,6 +15,6 @@ $reply[$messageID;
 ;yes]
 $onlyIf[$mentioned[1]!=;$getServerVar[emojie] » **$username**, informe a menção do usuário que você deseja fazer cafuné!]
 $suppressErrors[$getServerVar[emojie] » **$username**, algo deu errado tentar ao executar o comando!]
-$globalCooldown[5s;$getServerVar[emojie] » **$username**, calma ai apressadinho espere \`[ $replaceText[$replaceText[$getCooldownTime[5s;globalUser;cafuné;$authorID];seconds;Segundos];second;Segundo] ]\` para executar o comando novamente!]
+$globalCooldown[5s;$getServerVar[emojie] » **$username**, calma ai apressadinho espere **\`[ $replaceText[$replaceText[$getCooldownTime[5s;globalUser;cafuné;$authorID];seconds;Segundos];second;Segundo] ]\`** para executar o comando novamente!]
 `
 }
