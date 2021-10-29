@@ -6,7 +6,7 @@ code: `
 
 $setVar[comandos;$sum[$getVar[comandos];1]]
 $reply[$messageID;
-{author:😘 $username beijou $username[$mentioned[1]]:$authorAvatar}
+{author:💏 $username beijou $username[$mentioned[1]]:$authorAvatar}
 {description:}
 {color:$getServerVar[color]}
 {timestamp:ms}
