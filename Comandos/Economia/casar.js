@@ -12,12 +12,13 @@ $onlyIf[$mentioned[1]!=$authorID;$getServerVar[emojie] » **$username**, você n
 $onlyIf[$mentioned[1]!=895106609406160978;$getServerVar[emojie] » **$username**, foi mal mas não estou muito afim de me casar com você.]
 $onlyIf[$getServerVar[casado;$mentioned[1]]!=false;$getServerVar[emojie] » **$username**, o usuário mencionado já é casado!]
 $onlyIf[$getServerVar[casado;$authorID]!=false;$getServerVar[emojie] » **$username**, você já é casado!]
+$let[author;$authorID]
 `
 }, {
 type: "awaitedCommand",
 name: "aceitarcasar",
 code: `
-<:zenitsu_love:903708725536231424> <@$authorID> e <@$mentioned[1]> se casaram. Agora os dois receberão **$200** rosquinhas a cada 12hrs!
+<:zenitsu_love:903708725536231424> <$get[author]> e <@$mentioned[1]> se casaram. Agora os dois receberão **$200** rosquinhas a cada 12hrs!
 `
 }, {
 name: "$alwaysExecute",
