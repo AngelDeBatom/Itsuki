@@ -35,7 +35,7 @@ bot.onInteractionCreate();
 bot.onJoined();
 
 bot.variables({
-casandoauthor: "",
+casadoauthor: "",
 casadocom: "Níguem",
 casado: "",
 color: "e2f038",
