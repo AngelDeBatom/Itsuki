@@ -2,7 +2,7 @@ module.exports = [{
 name: "casar",
 aliases: "marry",
 code: `
-$setGlobalUserVar[casadoauthor;$let[author];$authorID]
+$setGlobalUserVar[casadoauthor;$get[author];$authorID]
 $awaitReaction[$mentioned[1];1h;
 <@$mentioned[1]>, você recebeu uma proposta de casamento de <@$authorID>. Reaja com <:zenitsu_love:903708725536231424> para se casar com <@$authorID>!
 ;<:zenitsu_love:903708725536231424>;aceitarcasar;]
