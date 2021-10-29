@@ -19,7 +19,7 @@ type: "awaitedCommand",
 name: "aceitarcasar",
 code: `
 $setGlobalUserVar[casadocom;Casado com $username[$mentioned[1]];$getGlobalUserVar[casadoauthor;$mentioned[1]]]
-<:zenitsu_love:903708725536231424> <@$getGlobalUserVar[casadoauthor;$mentioned[1]]> e <@$mentioned[1]> se casaram. Agora os dois receberão **$200** rosquinhas a cada 12hrs!
+<:zenitsu_love:903708725536231424> **$username** e <@$mentioned[1]> se casaram. Agora os dois receberão **$200** rosquinhas a cada 12hrs!
 `
 }, {
 name: "$alwaysExecute",
