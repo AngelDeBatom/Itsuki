@@ -2,7 +2,7 @@ module.exports = [{
 name: "casar",
 aliases: "marry",
 code: `
-$setGlobalUserVar[casadoauthor;$get[author];$authorID]
+$setGlobalUserVar[casadoauthor;$get[author];$mentioned[1]]
 $awaitReaction[$mentioned[1];1h;
 <@$mentioned[1]>, você recebeu uma proposta de casamento de <@$authorID>. Reaja com <:zenitsu_love:903708725536231424> para se casar com <@$authorID>!
 ;<:zenitsu_love:903708725536231424>;aceitarcasar;]
@@ -19,7 +19,7 @@ $let[author;$authorID]
 type: "awaitedCommand",
 name: "aceitarcasar",
 code: `
-<:zenitsu_love:903708725536231424> <$getGlobalUserVar[casadoauthor;$getGlobalUserVar[casadoauthor]]> e <@$mentioned[1]> se casaram. Agora os dois receberão **$200** rosquinhas a cada 12hrs!
+<:zenitsu_love:903708725536231424> <@$getGlobalUserVar[casadoauthor;$mentioned[1]]> e <@$mentioned[1]> se casaram. Agora os dois receberão **$200** rosquinhas a cada 12hrs!
 `
 }, {
 name: "$alwaysExecute",
