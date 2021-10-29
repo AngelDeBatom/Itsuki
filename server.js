@@ -43,7 +43,7 @@ muted: "",
 comandos: "0",
 welcomechannel: "",
 devs: "838166653039935538;542305880054431764",
-prefix: "t^",
+prefix: "z.",
 téocoins: "0",
 paypal: "0",
 gasolina: "100",
@@ -58,13 +58,13 @@ funcionarios: "0",
 })
 
 bot.status({
-text: "🍕 Cara, eu amo pizza!", 
+text: "🍙 Cara, eu amo bolinho de arroz!", 
 type: "STREAMING", 
 status: "idle",
 time: 12
 })
 bot.status({
-text: "Com $numberSeparator[$allMembersCount] amiguinhos! 🧡🧡🧡", 
+text: "Com $numberSeparator[$allMembersCount] amiguinhos! 💛💛💛", 
 type: "PLAYING", 
 status: "idle",
 time: 12
