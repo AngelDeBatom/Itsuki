@@ -35,6 +35,7 @@ bot.onInteractionCreate();
 bot.onJoined();
 
 bot.variables({
+emojie: "<:zenitsu_crying:903753184709849158>",
 pet: "Cachorro",
 petname: "Sem Nome",
 welcomemsg: "Olá {user.mention}, seja bem-vindo(a) ao {guild.name}`({guild.id})`.",
