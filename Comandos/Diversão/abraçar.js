@@ -10,6 +10,8 @@ $reply[$messageID;
 {description:}
 {author:🤗 $username abraçou $username[$mentioned[1]]:$authorAvatar}
 {color:$getServerVar[color]}
+{timestamp:ms}
+{foooter:Executado por: $userTag:$authorAvatar}
 ;yes]
 $onlyIf[$mentioned[1]!=;$getServerVar[emojie] » **$username**, informe a menção do usuário que você deseja abraçar!]
 $suppressErrors[$getServerVar[emojie] » **$username**, algo deu errado ao tentar executar o comando!]
