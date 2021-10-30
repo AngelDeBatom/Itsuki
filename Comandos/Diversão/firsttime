@@ -1,10 +1,8 @@
 module.exports = {
 name: "firsttime",
 code: `
-$reply[$messageID;
-{author:First Time:$authorAvatar}{timestamp:ms}{footer:Executado por: $userTag:$authorAvatar}{color:$getServerVar[color]}
-{description:}
-{attachment:firsttime.png:https\\://vacefron.nl/api/firsttime?user=$replaceText[$userAvatar[$authorID];webp;png]}
-;yes]
+$author[First Time;$authorAvatar]$addtimestamp$footer[Executado por: $userTag;$authorAvatar]$color[$getServerVar[color]]
+$description[]
+$attachment[https://vacefron.nl/api/firsttime?user=$replaceText[$userAvatar[$authorID];webp;png]]
 `
 }
