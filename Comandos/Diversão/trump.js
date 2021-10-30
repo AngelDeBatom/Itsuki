@@ -10,7 +10,7 @@ $reply[$messageID;
 {description:}
 {image:https://api.no-api-key.com/api/v2/trump?message=$replaceText[$message; ;+;-1]}
 {timestamp:ms}
-{footer:Executado por: $userTag:$authorAvatar}
+{footer:Executado por\\: $userTag:$authorAvatar}
 ;yes]
 $onlyIf[$message!=;$getServerVar[emojie] » **$username**, informe a mensagem que aparecerá no twitter de Donald Trump!]
 $suppressErrors[$getServerVar[emojie] » **$username**, algo deu errado ao tentar executar o comando!]
