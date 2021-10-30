@@ -4,7 +4,7 @@ code: `
 $reply[$messageID;
 {author:Lyrics:$authorAvatar}{timestamp:ms}{footer:Executado por: $userTag:$authorAvatar}{color:$getServerVar[color]}
 {description:
-$jsonRequest[https://some-random-api.ml/lyrics?title=$replaceText[$songInfo[title]; ;+;-1];lyrics]
+$jsonRequest[https\\://some-random-api.ml/lyrics?title=$replaceText[$songInfo[title]; ;+;-1];lyrics]
 }
 ;yes]
 $onlyIf[$queueLength!=0;<:errado:895110700500934667> » **$username**, não possui nenhuma música na queue!]
