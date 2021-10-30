@@ -9,7 +9,7 @@ $if[$noMentionMessage==all]
 $setGlobalUserVar[zenitsucoins;0;$authorID]
 $setGlobalUserVar[paypal;$sum[$getGlobalUserVar[paypal;$authorID];$getGlobalUserVar[zenitsucoins;$authorID]];$authorID]
 $reply[$messageID;
-{author:Depositado:$authorAvatar}{description:<:correto:895110679495839785> » **$username**, você depositou **\`[ $numberSeparator[$getGlobalUserVar[téocoins;$authorID]] ( $abbreviate[$getGlobalUserVar[téocoins;$authorID]] ) ZenitsuCoins ]\`** no seu paypal.}
+{author:Depositado:$authorAvatar}{description:<:correto:895110679495839785> » **$username**, você depositou **\`[ $numberSeparator[$getGlobalUserVar[zenitsucoins;$authorID]] ( $abbreviate[$getGlobalUserVar[zenitsucoins;$authorID]] ) ZenitsuCoins ]\`** no seu paypal.}
 {color:F39A63}
 ;yes]
 $onlyIf[$message<=$getGlobalUserVar[zenitsucoins;$authorID];$getServerVar[emojie] » **$username**, não pode depositar mais do que o que está em sua carteira!]
