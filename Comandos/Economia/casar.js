@@ -13,6 +13,8 @@ $onlyIf[$mentioned[1]!=$authorID;$getServerVar[emojie] » **$username**, você n
 $onlyIf[$mentioned[1]!=895106609406160978;$getServerVar[emojie] » **$username**, foi mal mas não estou muito afim de me casar com você.]
 $onlyIf[$getServerVar[casado;$mentioned[1]]!=false;$getServerVar[emojie] » **$username**, o usuário mencionado já é casado!]
 $onlyIf[$getServerVar[casado;$authorID]!=false;$getServerVar[emojie] » **$username**, você já é casado!]
+$let[test;$authorID]
+$get[test]
 `
 }, {
 type: "awaitedCommand",
