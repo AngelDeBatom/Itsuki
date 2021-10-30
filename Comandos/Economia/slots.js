@@ -27,6 +27,6 @@ $onlyIf[$message[1]!=;$getServerVar[emojie] » **$username**, insira a quantia q
 $onlyIf[$checkContains[$noMentionMessage;-;--;+;$;&;';";!;?;/;);(;@;#;*;.;,]!=true;$getServerVar[emojie] » **$username**, você não pode inserir nenhum caractere muito menos apostar números negativos!]
 $suppressErrors[$getServerVar[emojie] » **$username**, algo deu errado ao tentar executar o comando!]
 $globalCooldown[5s;$getServerVar[emojie] » **$username**, calma ai apressadinho espere **\`[ $replaceText[$replaceText[$getCooldownTime[5s;globalUser;slots;$authorID];seconds;Segundos];second;Segundo] ]\`** para executar o comando novamente!]
-
+$onlyForIDS[$botownerid;]
 ` 
 }
