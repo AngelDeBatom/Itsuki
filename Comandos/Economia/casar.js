@@ -18,8 +18,8 @@ $onlyIf[$getServerVar[casado;$authorID]!=false;$getServerVar[emojie] » **$usern
 type: "awaitedCommand",
 name: "aceitarcasar",
 code: `
-$setGlobalUserVar[casadocom;Casado com $username[$authorID];$authorID]
-$setGlobalUserVar[casadocom;Casado com $username[$mentioned[1]];$mentioned[1]]
+$setGlobalUserVar[casadocom;Casado com $username[$authorID];$mentioned[1]]
+$setGlobalUserVar[casadocom;Casado com $username[$mentioned[1]];$authorID]
 <:zenitsu_love:903708725536231424> **$username** e <@$authorID> se casaram. Agora os dois receberão **$200** rosquinhas a cada 12hrs!
 `
 }, {
