@@ -9,7 +9,7 @@ $if[$noMentionMessage==all]
 $setGlobalUserVar[paypal;0;$authorID]
 $setGlobalUserVar[zenitsucoins;$sum[$getGlobalUserVar[téocoins;$authorID];$getGlobalUserVar[paypal;$authorID]];$authorID]
 $reply[$messageID;
-{author:Sacado:$authorAvatar}{description:<:correto:895110679495839785> » **$username**, você sacou ***\`[ $numberSeparator[$getGlobalUserVar[paypal;$authorID]] ( $abbreviate[$getGlobalUserVar[paypal;$authorID]] ) TéoCoins ]\`*** do seu paypal.}
+{author:Sacado:$authorAvatar}{description:<:correto:895110679495839785> » **$username**, você sacou **\`[ $numberSeparator[$getGlobalUserVar[paypal;$authorID]] ( $abbreviate[$getGlobalUserVar[paypal;$authorID]] ) ZenitsuCoins ]\`** do seu paypal.}
 {color:F39A63}
 ;yes]
 $onlyIf[$message<=$getGlobalUserVar[paypal;$authorID];<:errado:895110700500934667> » **$username**, não pode sacar mais do que o que está em seu paypal!]
@@ -18,7 +18,7 @@ $else
 $setGlobalUserVar[zenitsucoins;$sum[$getGlobalUserVar[téocoins;$authorID];$message];$authorID]
 $setGlobalUserVar[paypal;$sub[$getGlobalUserVar[paypal;$authorID];$message];$authorID]
 $reply[$messageID;
-{author:Sacado:$authorAvatar}{description:<:correto:895110679495839785> » **$username**, você sacou ***\`[ $numberSeparator[$noMentionMessage] ( $abbreviate[$noMentionMessage] ) TéoCoins ]\`*** do seu paypal.}
+{author:Sacado:$authorAvatar}{description:<:correto:895110679495839785> » **$username**, você sacou **\`[ $numberSeparator[$noMentionMessage] ( $abbreviate[$noMentionMessage] ) ZenitsuCoins ]\`** do seu paypal.}
 {color:F39A63}
 ;yes]
 $onlyIf[$getGlobalUserVar[paypal;$authorID]>0;<:errado:895110700500934667> » **$username**, não há nada a retirar!]
