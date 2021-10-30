@@ -1,0 +1,10 @@
+module.exports = {
+name: "firsttime",
+code: `
+$reply[$messageID;
+{author:First Time:$authorAvatar}{timestamp:ms}{footer:Executado por: $userTag:$authorAvatar}{color:$getServerVar[color]}
+{description:}
+{attachment:firsttime:https://vacefron.nl/api/firsttime?user=$userAvatar[$authorID]}
+;yes]
+`
+}
