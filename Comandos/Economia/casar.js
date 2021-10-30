@@ -14,7 +14,6 @@ $onlyIf[$mentioned[1]!=895106609406160978;$getServerVar[emojie] » **$username**
 $onlyIf[$getServerVar[casado;$mentioned[1]]!=false;$getServerVar[emojie] » **$username**, o usuário mencionado já é casado!]
 $onlyIf[$getServerVar[casado;$authorID]!=false;$getServerVar[emojie] » **$username**, você já é casado!]
 $let[test;$authorID]
-$get[test]
 `
 }, {
 type: "awaitedCommand",
@@ -22,7 +21,7 @@ name: "aceitarcasar",
 code: `
 $setGlobalUserVar[casadocom;Casado com $username[$authorID];$mentioned[1]]
 $setGlobalUserVar[casadocom;Casado com $username[$mentioned[1]];$authorID]
-<:zenitsu_love:903708725536231424> **$username** e <@$authorID> se casaram. Agora os dois receberão **$200** rosquinhas a cada 12hrs!
+<:zenitsu_love:903708725536231424> **$username[$get[test]]** e <@$authorID> se casaram. Agora os dois receberão **$200** rosquinhas a cada 12hrs!
 `
 }, {
 name: "$alwaysExecute",
