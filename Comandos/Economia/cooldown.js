@@ -6,8 +6,6 @@ code: `
 
 $setVar[comandos;$sum[$getVar[comandos];1]]
 $reply[$messageid;{title:<:futuro:895419380601610250> **Seus Cooldowns**}{color:F39A63}{description:
-<:nada:895112926678097930>**[ Geral ]**
-
 <:nada:895112926678097930>**[ Economia ]**
 
 **Emprego**\n***\`[ $if[$getCooldownTime[5m;globalUser;work;$authorID]==0]
