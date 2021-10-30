@@ -4,7 +4,7 @@ code: `
 $reply[$messageID;
 {author:Wolverine:$authorAvatar}{timestamp:ms}{footer:Executado por: $userTag:$authorAvatar}{color:$getServerVar[color]}
 {description:}
-{attachment:wolverine:https://vacefron.nl/api/wolverine?user=$userAvatar[$authorID]}
+{attachment:wolverine.png:https://vacefron.nl/api/wolverine?user=$userAvatar[$authorID]}
 ;yes]
 `
 }
