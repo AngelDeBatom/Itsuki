@@ -5,7 +5,7 @@ description: "Veja o cooldown dos comandos de economia!",
 code: `
 
 $setVar[comandos;$sum[$getVar[comandos];1]]
-$reply[$messageid;{title:<:futuro:895419380601610250> **Seus Cooldowns**}{color:F39A63}{description:
+$reply[$messageid;{timestamp:ms}{footer:Executado por: $userTag:$authorAvatar}{title:<:futuro:895419380601610250> **Seus Cooldowns**}{color:$getServerVar[color]}{description:
 <:nada:895112926678097930>**[ Economia ]**
 
 **Emprego**\n***\`[ $if[$getCooldownTime[5m;globalUser;work;$authorID]==0]
