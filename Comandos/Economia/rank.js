@@ -22,7 +22,7 @@ name: "rank2",
 type: "awaitedCommand",
 code: `
 $interactionReply[;
-{author:Rank - Level:$authorAvatar}
+{author:Rank - Paypal:$authorAvatar}
 {title:<:paypal:895205813185052702> Tabela de classificação do Paypal 
 $globalUserLeaderboard[paypal;asc;]}
 {color:F39A63}
@@ -34,9 +34,9 @@ name: "rank3",
 type: "awaitedCommand",
 code: `
 $interactionReply[;
-{author:Rank - Level:$authorAvatar}
-{title:<:grana:895209219287040040> Tabela de classificação do TéoCoins 
-$globalUserLeaderboard[téocoins;asc]}
+{author:Rank - ZenitsuCoins:$authorAvatar}
+{title:<:grana:895209219287040040> Tabela de classificação do ZenitsuCoins 
+$globalUserLeaderboard[zenitsucoins;asc]}
 {color:F39A63}
 {timestamp:ms}
 ;{actionRow:Página Inicial,2,1,rankinicial:Level,2,1,rank1:Paypal,2,1,rank2:Xp,2,1,rank4};64;7]
@@ -46,7 +46,7 @@ name: "rank4",
 type: "awaitedCommand",
 code: `
 $interactionReply[;
-{author:Rank - Level:$authorAvatar}
+{author:Rank - XP:$authorAvatar}
 {title:<:mongodb:895524206291325008> Tabela de classificação de XP 
 $globalUserLeaderboard[xp;asc]}
 {color:F39A63}
