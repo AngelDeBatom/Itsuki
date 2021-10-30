@@ -6,7 +6,7 @@ $author[Slots;$authorAvatar]
 $addTimestamp
 $footer[Executado por: $userTag;$authorAvatar]
 $description[
-Você apostou $numberSeparator[$message[1]] e...Ganhou!!!
+Você apostou **$numberSeparator[$message[1]]** e...Ganhou!!!
 🌈 Resultado: \`$randomText[❤️|❤️|❤️;💎|💎|💎;🌸|🌸|🌸;🍄|🍄|🍄;🌱|🌱|🌱]\`
 🌟 Atm: \`$numberSeparator[$getGlobalUserVar[zenitsucoins]]\`]
 $setGlobalUserVar[zenitsucoins;$sum[$getGlobalUserVar[zenitsucoins;$authorID];$message[1]];$authorID]
@@ -15,7 +15,7 @@ $author[Slots;$authorAvatar]
 $addTimestamp
 $footer[Executado por: $userTag;$authorAvatar]
 $description[
-Você apostou $numberSeparator[$message[1]]  e infelizmente...Perdeu
+Você apostou **$numberSeparator[$message[1]]**  e infelizmente...Perdeu
 🌈 Resultado: \`$randomText[🌟|🌟|⭐;🍉|🍎|🍉;💛|💜|💜;🧶|🌱|⚙️;💕|💞|💕]\`
 🌟 Atm: \`$numberSeparator[$getGlobalUserVar[zenitsucoins]]\`]
 $setGlobalUserVar[zenitsucoins;$sub[$getGlobalUserVar[zenitsucoins;$authorID];$message[1]];$authorID]
