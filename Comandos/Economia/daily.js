@@ -14,8 +14,8 @@ $reply[$messageID;
 {color:F39A63}
 ;yes]
 
-$globalCooldown[12h;<:errado:895110700500934667> » **$username**, aguarde ***\`[ $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$getCooldownTime[12h;globalUser;daily;$authorID];minutes;Minutos];seconds;Segundos];hours;Horas];and;e];second;Segundo] ]\`*** para coletar sua recompensa diária novamente!]
+$globalCooldown[12h;$getServerVar[emojie] » **$username**, aguarde *\`[ $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$getCooldownTime[12h;globalUser;daily;$authorID];minutes;Minutos];seconds;Segundos];hours;Horas];and;e];second;Segundo] ]\`** para coletar sua recompensa diária novamente!]
 
-$suppressErrors[<:errado:895110700500934667> » **$username**, algo deu errado ao executar o comando. Provavelmente estou sem a permissão ***\`[ Usar Emojis Externos ]\`***!]
+$suppressErrors[$getServerVar[emojie] » **$username**, algo deu errado ao tentar executar o comando!]
 `
 }
