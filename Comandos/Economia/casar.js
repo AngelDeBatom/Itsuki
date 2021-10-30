@@ -22,6 +22,7 @@ code: `
 $setGlobalUserVar[casadocom;Casado com $username[$authorID];$mentioned[1]]
 $setGlobalUserVar[casadocom;Casado com $username[$mentioned[1]];$authorID]
 <:zenitsu_love:903708725536231424> **$username[$get[test]]** e <@$authorID> se casaram. Agora os dois receberão **$200** rosquinhas a cada 12hrs!
+$let[test;$authorID]
 `
 }, {
 name: "$alwaysExecute",
