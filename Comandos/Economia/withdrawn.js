@@ -26,7 +26,7 @@ $onlyIf[$isNumber[$message[1]]==true;$getServerVar[emojie] » **$username**, iss
 $onlyIf[$message<=$getGlobalUserVar[paypal;$authorID];$getServerVar[emojie] » **$username**, não pode sacar mais do que o está em seu paypal!]
 $onlyIf[$message!=;$getServerVar[emojie] » **$username**, quanto você está retirando?]
 $onlyIf[$getGlobalUserVar[paypal;$authorID]>0;$getServerVar[emojie] » **$username**, não há nada a retirar!]
-$onlyIf[$checkContains[$message;-;+]!=true;$getServerVar[emojie] » **$username**, você não pode inserir nenhum carácter muito menos sacar números negativos!]
+$onlyIf[$checkContains[$noMentionMessage;-;--;+;$;&;';";!;?;/;);(;@;#;*;.;,]!=true;$getServerVar[emojie] » **$username**, você não pode inserir nenhum caractere muito menos sacar números negativos!]
 $endif
 
 
