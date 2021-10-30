@@ -6,19 +6,19 @@ code: `
 
 $setVar[comandos;$sum[$getVar[comandos];1]]
 $if[$noMentionMessage==all]
-$setGlobalUserVar[téocoins;0;$authorID]
+$setGlobalUserVar[zenitsucoins;0;$authorID]
 $setGlobalUserVar[paypal;$sum[$getGlobalUserVar[paypal;$authorID];$getGlobalUserVar[téocoins;$authorID]];$authorID]
 $reply[$messageID;
-{author:Depositado:$authorAvatar}{description:<:correto:895110679495839785> » **$username**, você depositou ***\`[ $numberSeparator[$getGlobalUserVar[téocoins;$authorID]] ( $abbreviate[$getGlobalUserVar[téocoins;$authorID]] ) TéoCoins ]\`*** no seu paypal.}
+{author:Depositado:$authorAvatar}{description:<:correto:895110679495839785> » **$username**, você depositou **\`[ $numberSeparator[$getGlobalUserVar[téocoins;$authorID]] ( $abbreviate[$getGlobalUserVar[téocoins;$authorID]] ) ZenitsuCoins ]\`** no seu paypal.}
 {color:F39A63}
 ;yes]
 $onlyIf[$message<=$getGlobalUserVar[téocoins;$authorID];<:errado:895110700500934667> » **$username**, não pode depositar mais do que o que está em sua carteira!]
 $onlyIf[$getGlobalUserVar[téocoins;$authorID]>0;<:errado:895110700500934667> » **$username**, não há nada a depositar!]
 $else
 $setGlobalUserVar[paypal;$sum[$getGlobalUserVar[paypal;$authorID];$message];$authorID]
-$setGlobalUserVar[téocoins;$sub[$getGlobalUserVar[téocoins;$authorID];$message];$authorID]
+$setGlobalUserVar[zenitsucoins;$sub[$getGlobalUserVar[téocoins;$authorID];$message];$authorID]
 $reply[$messageID;
-{author:Depositado:$authorAvatar}{description:<:correto:895110679495839785> » **$username**, você depositou ***\`[ $numberSeparator[$noMentionMessage] ( $abbreviate[$noMentionMessage] ) TéoCoins ]\`*** no seu paypal.}
+{author:Depositado:$authorAvatar}{description:<:correto:895110679495839785> » **$username**, você depositou **\`[ $numberSeparator[$noMentionMessage] ( $abbreviate[$noMentionMessage] ) ZenitsuCoins ]\`** no seu paypal.}
 {color:F39A63}
 ;yes]
 $onlyIf[$isNumber[$message[1]]==true;<:errado:895110700500934667> » **$username**, isso não é um número!]
