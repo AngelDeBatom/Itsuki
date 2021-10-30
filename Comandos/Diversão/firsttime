@@ -1,8 +1,0 @@
-module.exports = {
-name: "firsttime",
-code: `
-$author[First Time;$authorAvatar]$addtimestamp$footer[Executado por: $userTag;$authorAvatar]$color[$getServerVar[color]]
-$description[]
-$attachment[https://vacefron.nl/api/firsttime?user=$replaceText[$userAvatar[$authorID];webp;png]]
-`
-}
