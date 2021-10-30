@@ -2,12 +2,18 @@ module.exports = {
   name: "slots",
   code: `
 $If[$randomText[perdeu;ganhou]==ganhou]
+$author[Slots;$authorAvatar]
+$addTimestamp
+$footer[Executado por: $userTag;$authorAvatar]
 $description[
 Você apostou $numberSeparator[$message[1]] e...Ganhou!!!
 🌈 Resultado: \`$randomText[❤️|❤️|❤️;💎|💎|💎;🌸|🌸|🌸;🍄|🍄|🍄;🌱|🌱|🌱]\`
 🌟 Atm: \`$numberSeparator[$getGlobalUserVar[zenitsucoins]]\`]
 $setGlobalUserVar[zenitsucoins;$sum[$getGlobalUserVar[zenitsucoins;$authorID];$message[1]];$authorID]
 $else
+$author[Slots;$authorAvatar]
+$addTimestamp
+$footer[Executado por: $userTag;$authorAvatar]
 $description[
 Você apostou $numberSeparator[$message[1]]  e infelizmente...Perdeu
 🌈 Resultado: \`$randomText[🌟|🌟|⭐;🍉|🍎|🍉;💛|💜|💜;🧶|🌱|⚙️;💕|💞|💕]\`
