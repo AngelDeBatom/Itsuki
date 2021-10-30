@@ -20,14 +20,14 @@ Total: ***\`[ $sum[$getGlobalUserVar[téocoins;$authorID];$random[0;750]] TéoCo
 $addField[$username[$mentioned[1]];
 Total: ***\`[ $sub[$getGlobalUserVar[téocoins;$mentioned[1]];$random[0;750]] TéoCoins e $sub[$getGlobalUserVar[xp;$mentioned[1]];$random[50;75]] XP ]\`***
 ]]
-$globalCooldown[6h;<:errado:895110700500934667> » **$username**, aguarde ***\`[ $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$getCooldownTime[6h;globalUser;roubar;$authorID];minutes;Minutos];seconds;Segundos];hours;Horas];and;e];second;Segundo] ]\`*** para roubar alguém novamente!]
-$onlyIf[$getGlobalUserVar[zenitsucoins;$authorID]>=750;<:errado:895110700500934667> » **$username**, você precisa conter pelo menos ***\`[ 750 TéoCoins ]\`***.]
-$onlyIf[$getGlobalUserVar[xp;$authorID]>=75;<:errado:895110700500934667> » **$username**, você precisa conter pelo menos ***\`[ 75 XP ]\`*** para roubar alguém!]
-$onlyIf[$getGlobalUserVar[xp;$mentioned[1]]>=25;<:errado:895110700500934667> » **$username**, ele precisa conter pelo menos ***\`[ 25 XP ]\`***!]
-$onlyIf[$getGlobalUserVar[zenitsucoins;$mentioned[1]]>=750;<:errado:895110700500934667> » **$username**, ele dever conter pelo menos ***\`[ 750 TéoCoins ]\`*** na carteira!]
-$onlyIf[$isBot[$mentioned[1;yes]]!=true;<:errado:895110700500934667> » **$username**, você não pode roubar bots de discord!]
-$onlyIf[$mentioned[1]!=$authorID;<:errado:895110700500934667> » **$username**, você não pode roubar a si mesmo!]
-$onlyIf[$mentioned[1]!=;<:errado:895110700500934667> » **$username**, mencione alguém para roubar!]
-$suppressErrors[<:errado:895110700500934667> » **$username**, algo deu errado ao executar o comando!]
+$globalCooldown[6h;$getServerVar[emojie] » **$username**, aguarde **\`[ $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$getCooldownTime[6h;globalUser;roubar;$authorID];minutes;Minutos];seconds;Segundos];hours;Horas];and;e];second;Segundo] ]\`** para roubar alguém novamente!]
+$onlyIf[$getGlobalUserVar[zenitsucoins;$authorID]>=750;$getServerVar[emojie] » **$username**, você precisa conter pelo menos ***\`[ 750 TéoCoins ]\`***.]
+$onlyIf[$getGlobalUserVar[xp;$authorID]>=75;$getServerVar[emojie] » **$username**, você precisa conter pelo menos ***\`[ 75 XP ]\`*** para roubar alguém!]
+$onlyIf[$getGlobalUserVar[xp;$mentioned[1]]>=25;$getServerVar[emojie] » **$username**, ele precisa conter pelo menos ***\`[ 25 XP ]\`***!]
+$onlyIf[$getGlobalUserVar[zenitsucoins;$mentioned[1]]>=750;$getServerVar[emojie] » **$username**, ele dever conter pelo menos ***\`[ 750 TéoCoins ]\`*** na carteira!]
+$onlyIf[$isBot[$mentioned[1;yes]]!=true;$getServerVar[emojie] » **$username**, você não pode roubar bots de discord!]
+$onlyIf[$mentioned[1]!=$authorID;$getServerVar[emojie] » **$username**, você não pode roubar a si mesmo!]
+$onlyIf[$mentioned[1]!=;$getServerVar[emojie] » **$username**, mencione alguém para roubar!]
+$suppressErrors[$getServerVar[emojie] » **$username**, algo deu errado ao tentar executar o comando!]
 `
 }
