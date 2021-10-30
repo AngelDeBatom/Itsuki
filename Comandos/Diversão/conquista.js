@@ -10,7 +10,7 @@ $reply[$messageID;
 {description:}
 {image:https://minecraftskinstealer.com/achievement/$random[1;39]/Achievement+Get%21/$replaceText[$message;;+;-1]}
 {color:$getServervar[color]}
-{footer:Executado por: $userTag:$authorAvatar}
+{footer:Executado por\\: $userTag:$authorAvatar}
 {timestamp:ms}
 ;yes]
 $onlyIf[$message!=;$getServerVar[emojie] » **$username**, informe a mensagem que aparecerá nos stories do Donal J. Trump!]
