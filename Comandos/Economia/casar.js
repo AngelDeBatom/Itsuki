@@ -2,6 +2,8 @@ module.exports = [{
 name: "casar",
 aliases: "marry",
 code: `
+$setGlobalUserVar[casadocom;Casado com $username[$authorID];$authorID]
+$setGlobalUserVar[casadocom;Casado com $username[$mentioned[1]];$mentioned[1]]
 $setGlobalUserVar[casadoauthor;$authorID;$mentioned[1]]
 $awaitReaction[$mentioned[1];1h;
 <@$mentioned[1]>, você recebeu uma proposta de casamento de <@$authorID>. Reaja com <:zenitsu_love:903708725536231424> para se casar com <@$authorID>!
@@ -18,7 +20,6 @@ $onlyIf[$getServerVar[casado;$authorID]!=false;$getServerVar[emojie] » **$usern
 type: "awaitedCommand",
 name: "aceitarcasar",
 code: `
-$setGlobalUserVar[casadocom;Casado com $username[$mentioned[1]];$getGlobalUserVar[casadoauthor;$mentioned[1]]]
 <:zenitsu_love:903708725536231424> **$username** e <@$authorID> se casaram. Agora os dois receberão **$200** rosquinhas a cada 12hrs!
 `
 }, {
