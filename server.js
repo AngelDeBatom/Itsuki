@@ -46,7 +46,6 @@ interpreter: true
 })
 
 //Arquivos principais do bot
-require('./Utils/status')(bot);
 require('./Utils/callbacks')(bot);
 require('./Utils/variables')(bot);
 
