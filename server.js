@@ -96,7 +96,9 @@ $interactionReply[
 bot.interactionCommand({
  name: "8ball", 
  code: `$interactionReply[
-{description:test}
+{color:$getServerVar[embedscolor]}
+{description:}
+{field:Pergunta:$message:yes}
 ]`
  })
 
