@@ -71,16 +71,33 @@ bot.onInteractionCreate();
 bot.onJoined();
 
 bot.command({
-  name: "say",
+  name: "slashscommands",
   code: `
-$createSlashCommand[$guildID;say;Irei reeptir o que você falar;message:sua mensagem:true:3] Slash command succefully created!
+$createSlashCommand[$guildID;ping;Veja o meu ping]
+$createSlashCommand[$guildID;kiss;Beije um usuário;user:usuário:true:6]
+$createSlashCommand[$guildID;say;Irei reeptir o que você falar;message:sua mensagem:true:3] Slashs commands succefully created!
 `
 })
 bot.interactionCommand({
  name: "say", 
  code: `$interactionReply[$message]`
  })
-
+bot.interactionCommand({
+ name: "ping", 
+ code: `$interactionReply[$message]`
+ })
+bot.interactionCommand({
+ name: "kiss", 
+ code: `$interactionReply[{author:💏 $username beijou $username[$mentioned[1]]:$authorAvatar}
+{description:}
+{color:$getServerVar[embedscolor]}
+{timestamp:ms}
+{footer:Executado por\\: $userTag:$authorAvatar}
+{image:$randomText[https://i.pinimg.com/originals/6f/c2/5f/6fc25fdd3e22d89b19c3ea76d11789e6.gif;https://i.pinimg.com/originals/b0/37/a0/b037a0d27fc2fce28cd279561ec89825.gif;https://media1.tenor.com/images/78095c007974aceb72b91aeb7ee54a71/tenor.gif?itemid=5095865;https://acegif.com/wp-content/uploads/anime-kissin-8.gif]}
+`
+}
+]`
+ })
 
 
 
