@@ -1,3 +1,4 @@
+const discord = require('discord.js');
 const aoijs = require('aoi.js');
 const express = require('express');
 const app = express();
