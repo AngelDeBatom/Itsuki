@@ -76,7 +76,7 @@ bot.command({
   name: "slashscommands",
   code: `
 $createSlashCommand[$guildID;ping;Veja o meu ping]
-$createSlashCommand[$guildID;kiss;Beije um usuário;user:usuário:true:6]
+$createSlashCommand[$guildID;8ball;faça uma pergunta para o zenitsu;message:sua pergunta:true:3]
 $createSlashCommand[$guildID;say;Irei reeptir o que você falar;message:sua mensagem:true:3] Slashs commands succefully created!
 `
 })
@@ -94,8 +94,10 @@ $interactionReply[
 `
  })
 bot.interactionCommand({
- name: "kiss", 
- code: `$interactionReply[beijou aldlasd]`
+ name: "8ball", 
+ code: `$interactionReply[
+{description:test}
+]`
  })
 
 
