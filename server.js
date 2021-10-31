@@ -1,3 +1,4 @@
+const aoijs = require('aoi.js');
 const express = require('express');
 const app = express();
 app.get("/", (request, response) => {
@@ -9,86 +10,66 @@ app.get("/", (request, response) => {
 app.listen(process.env.PORT); // Recebe solicitações que o deixa online
 
 
-const aoijs = require("aoi.js");
-const a = require("aoijs.firebase");
-const db = a.create({
-  apiKey: "AIzaSyBALK_q3_Yduojk57-3jN51PqE7_micn7k",
-  authDomain: "teo-database.firebaseapp.com",
-  projectId: "teo-database",
-  storageBucket: "teo-database.appspot.com",
-  messagingSenderId: "283972531506",
-  appId: "1:283972531506:web:be79c81c51b147f3c4d32b",
-  measurementId: "G-MBC64QT9WP"
-}) 
+//Configurando a Firebase
+//Importando o packager principal
+const firebase = require("firebase")
+//Chaves principais da Firebase
+const firebaseConfig = {
+  apiKey: "AIzaSyCfPfPBsBjaOPzAaKT8Z5FhrP80M7Gap18",
+  authDomain: "zenitsu-databse.firebaseapp.com",
+  databaseURL: "https://zenitsu-databse-default-rtdb.firebaseio.com",
+  projectId: "zenitsu-databse",
+  storageBucket: "zenitsu-databse.appspot.com",
+  messagingSenderId: "86264328729",
+  appId: "1:86264328729:web:4b37b9301d8c42942df088",
+  measurementId: "G-0FD291TTQ5"
+};
+//Iniciando a Firebase
+firebase.initializeApp(firebaseConfig);
+//Definindo ZenitsuDB como a database para o client
+const db = firebase.firestore();
 
 const bot = new aoijs.Bot({
 token: process.env.token, //Discord Bot Token
 prefix: "$getServerVar[prefix]", //Discord Bot Prefix
+mobile: false,
+sharding: true,
+shardAmount: 0,
+autoUpdate: true,
+fetchInvites: true,
+suppressAllErrors: true,
+//db: firebase,
 intents: "all",
-database: db      
+debugs:{
+interpreter: true
+  },  
 })
-bot.onMessage() //Allows to execute Commands
 
+//Arquivos principais do bot
+require('Utils/status')(bot);
+require('Utils/callbacks')(bot);
+require('Utils/variables')(bot);
+
+//Requerindo a pasta de comandos
 bot.loadCommands(`./Comandos/`)
+
+//Ativando as respostas do bot
+bot.onMessage({
+  repondToBots: false, //Desativando responder a bot
+  guildOnly: true //desativando responder na DM
+})
 
 bot.onInteractionCreate();
 bot.onJoined();
 
-bot.variables({
-numblacklist: "0",
-lastblacklist: "Ninguém",
-rblacklist: "",
-blacklist: "false",
-lastunblacklist: "Ninguém",
-embedscolor: "e2f038",
-emojie: "<:zenitsu_crying:903753184709849158>",
-emojin: "<:nada:895112926678097930>",
-pet: "Cachorro",
-petname: "Sem Nome",
-welcomemsg: "Olá {user.mention}, seja bem-vindo(a) ao {guild.name}`({guild.id})`.",
-welcomech: "",
-muted: "",
-comandos: "0",
-welcomechannel: "",
-devs: "838166653039935538;542305880054431764",
-prefix: "z/",
-zenitsucoins: "0",
-paypal: "0",
-gasolina: "100",
-peixes: "0",
-vara: "1",
-lvl: "0",
-xp: "0",
-rxp: "100",
-hotel: "false",
-quartos: "0",
-funcionarios: "0",
-})
+bot.command({
+  name: "say",
+  code: `
+$createSlashCommand[$guildID;say;Irei reeptir o que você falar] Slash command succefully created!
+`
+}) 
 
-bot.status({
-text: "🍙 Cara, eu amo bolinho de arroz!", 
-type: "STREAMING", 
-status: "idle",
-time: 12
-})
-bot.status({
-text: "Com $numberSeparator[$allMembersCount] amiguinhos! 💛💛💛", 
-type: "PLAYING", 
-status: "idle",
-time: 12
-})
-bot.status({
-text: "Com $serverCount servidores! 🌏🥰", 
-type: "PLAYING", 
-status: "idle",
-time: 12
-})
-bot.status({
-text: "🔧 Sendo Desenvolvido.", 
-type: "STREAMING", 
-status: "idle",
-time: 12
-})
+
 
 
 
