@@ -23,7 +23,7 @@ $getServerVar[emojin]╰ **$username**, algo deu errado ao tentar executar o com
 ]
 $globalCooldown[5s;
 $getServerVar[emojie] **Error**
-$getServerVar[emojin]╰ **$username**, espere **\`[ $replaceText[$replaceText[$getCooldownTime[5s;globalUser;hug;$authorID];seconds;Segundos];second;Segundo] ]\`** para executar o comando novamente!
+$getServerVar[emojin]╰ **$username**, espere \`$replaceText[$replaceText[$getCooldownTime[5s;globalUser;hug;$authorID];seconds;Segundos];second;Segundo]\` para executar o comando novamente!
 ]
 `
 }
