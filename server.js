@@ -95,7 +95,7 @@ $interactionReply[
  })
 bot.interactionCommand({
  name: "kiss", 
- code: `$interactionReply[beijou $mentioned[1]]`
+ code: `$interactionReply[beijou aldlasd]`
  })
 
 
