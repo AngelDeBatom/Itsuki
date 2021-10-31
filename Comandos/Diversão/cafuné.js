@@ -10,10 +10,18 @@ $reply[$messageID;
 {description:}
 {timestamp:ms}
 {footer:Executado por\\: $userTag:$authorAvatar}
-{color:$getServerVar[color]}
+{color:$getServerVar[embedscolor]}
 
-$onlyIf[$mentioned[1]!=;$getServerVar[emojie] » **$username**, informe a menção do usuário que você deseja fazer cafuné!]
-$suppressErrors[$getServerVar[emojie] » **$username**, algo deu errado tentar ao executar o comando!]
-$globalCooldown[5s;$getServerVar[emojie] » **$username**, calma ai apressadinho espere **\`[ $replaceText[$replaceText[$getCooldownTime[5s;globalUser;cafuné;$authorID];seconds;Segundos];second;Segundo] ]\`** para executar o comando novamente!]
+$onlyIf[$mentioned[1]!=;
+$getServerVar[emojie] **Error**
+$getServerVar[emojin]╰ **$username**, informe a menção do usuário que você deseja fazer cafuné!
+]
+$suppressErrors[
+$getServerVar[emojie] **Error**
+$getServerVar[emojin]╰ **$username**, algo deu errado tentar ao executar o comando!]
+$globalCooldown[5s;
+$getServerVar[emojie] **Error**
+$getServerVar[emojin]╰ **$username**, espere **\`[ $replaceText[$replaceText[$getCooldownTime[5s;globalUser;cafuné;$authorID];seconds;Segundos];second;Segundo] ]\`** para executar o comando novamente!
+]
 `
 }
