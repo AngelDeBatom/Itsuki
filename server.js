@@ -77,7 +77,8 @@ bot.command({
   code: `
 $createSlashCommand[$guildID;ping;Veja o meu ping]
 $createSlashCommand[$guildID;8ball;faça uma pergunta para o zenitsu;message:sua pergunta:true:3]
-$createSlashCommand[$guildID;say;Irei reeptir o que você falar;message:sua mensagem:true:3] Slashs commands succefully created!
+$createSlashCommand[$guildID;say;Irei reeptir o que você falar;message:sua mensagem:true:3] Slashs commands criado com sucesso!
+$suppressErrors[]
 `
 })
 bot.interactionCommand({
