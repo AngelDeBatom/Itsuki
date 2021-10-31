@@ -88,7 +88,7 @@ bot.interactionCommand({
  })
 bot.interactionCommand({
  name: "kiss", 
- code: `$interactionReply[{author:💏 $username beijou $username[$mentioned[1]]:$authorAvatar}
+ code: `$interactionReply[;{author:💏 $username beijou $username[$mentioned[1]]:$authorAvatar}
 {description:}
 {color:$getServerVar[embedscolor]}
 {timestamp:ms}
