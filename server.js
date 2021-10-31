@@ -35,11 +35,14 @@ bot.onInteractionCreate();
 bot.onJoined();
 
 bot.variables({
-casadoauthor: "",
-casadocom: "Níguem",
-casado: "",
-color: "e2f038",
+numblacklist: "0",
+lastblacklist: "Ninguém",
+rblacklist: "",
+blacklist: "false",
+lastunblacklist: "Ninguém",
+embedscolor: "e2f038",
 emojie: "<:zenitsu_crying:903753184709849158>",
+emojin: "<:nada:895112926678097930>",
 pet: "Cachorro",
 petname: "Sem Nome",
 welcomemsg: "Olá {user.mention}, seja bem-vindo(a) ao {guild.name}`({guild.id})`.",
