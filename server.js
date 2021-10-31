@@ -88,28 +88,14 @@ bot.interactionCommand({
  name: "ping", 
  code: `
 $interactionReply[
-📡 Latência da API ***\`[ $pingms ]\`***\n<:nada:895112926678097930>╰ Tempo de resposta ***\`[ $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$getObjectProperty[owo];0;];1;];2;];3;];4;];5;];6;];7;];8;];9;].;ms.;00.];s.;]$replaceText[$replaceText[$replaceText[$checkCondition[$charCount[$replaceText[$replaceText[$getObjectProperty[owo];m;];s;]]==1]$checkCondition[$charCount[$replaceText[$replaceText[$getObjectProperty[owo];m;];s;]]==2]$checkCondition[$charCount[$replaceText[$replaceText[$getObjectProperty[owo];m;];s;]]>2];truefalsefalse;00];falsetruefalse;0];falsefalsetrue;]$replaceText[$replaceText[$getObjectProperty[owo];m;];s;] Segundos ]\`***
-🤖 Latência do Bot ***\`[ $botPingms ]\`***
- $djsEval[
- let a = Date.now()
- const ms = require('ms')
- d.object.final = Math.floor(a - d.object.start)
- d.object.owo = ms(a - d.object.start)
- d.object.uwu = ms(d.object.botPing)
- ]
- $createObject[{"start": $dateStamp, "botPing": $botPing}]
+📡 Latência da API \`$pingms\`
+🤖 Latência do Bot \`$botPingms\`
 ]
 `
  })
 bot.interactionCommand({
  name: "kiss", 
- code: `$interactionReply[;{author:💏 $username beijou $username[$mentioned[1]]:$authorAvatar}
-{description:}
-{color:$getServerVar[embedscolor]}
-{timestamp:ms}
-{footer:Executado por\\: $userTag:$authorAvatar}
-{image:$randomText[https://i.pinimg.com/originals/6f/c2/5f/6fc25fdd3e22d89b19c3ea76d11789e6.gif;https://i.pinimg.com/originals/b0/37/a0/b037a0d27fc2fce28cd279561ec89825.gif;https://media1.tenor.com/images/78095c007974aceb72b91aeb7ee54a71/tenor.gif?itemid=5095865;https://acegif.com/wp-content/uploads/anime-kissin-8.gif]}
-]`
+ code: `$interactionReply[beijou $mentioned[1]]`
  })
 
 
