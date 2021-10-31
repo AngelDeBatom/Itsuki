@@ -14,8 +14,13 @@ $reply[$messageID;
 {footer:Executado por\\: $userTag:$authorAvatar}
 ;yes]
 
-$suppressErrors[$getServerVar[emojie] » **$username**, algo deu errado ao tentar executar o comando!]
-$globalCooldown[5s;$getServerVar[emojie] » **$username**, calma ai apressadinho espere **\`[ $replaceText[$replaceText[$getCooldownTime[5s;globalUser;happy;$authorID];seconds;Segundos];second;Segundo] ]\`** para executar o comando novamente!]
+$suppressErrors[
+$getServerVar[emojie] **Error**
+$getServerVar[emojin]╰ **$username**, algo deu errado ao tentar executar o comando!
+]
+$globalCooldown[5s;
+$getServerVar[emojie] **Error**
+$getServerVar[emojin]╰ **$username**, espere \`$replaceText[$replaceText[$getCooldownTime[5s;globalUser;happy;$authorID];seconds;Segundos];second;Segundo]\` para executar o comando novamente!]
 
 `
 }
