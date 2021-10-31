@@ -96,8 +96,10 @@ $interactionReply[
 bot.interactionCommand({
  name: "8ball", 
  code: `$interactionReply[
+{author:8ball:$authorAvatar}
 {color:$getServerVar[embedscolor]}
 {description:}
+{field:Resposta:$randomText[Com certeza;Concerteza não;Concerteza sim;Claro que não;Claro que sim;Não;Sim;Talvez;Talvez sim;Talvez não]}
 {field:Pergunta:$message:yes}
 ]`
  })
