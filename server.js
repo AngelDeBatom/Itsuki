@@ -73,9 +73,13 @@ bot.onJoined();
 bot.command({
   name: "say",
   code: `
-$createSlashCommand[$guildID;say;Irei reeptir o que você falar] Slash command succefully created!
+$createSlashCommand[$guildID;say;Irei reeptir o que você falar;message:sua mensagem:true:3] Slash command succefully created!
 `
-}) 
+})
+bot.interactionCommand({
+ name: "say", 
+ code: `$interactionReply[$message]`
+ })
 
 
 
