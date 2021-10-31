@@ -94,8 +94,6 @@ bot.interactionCommand({
 {timestamp:ms}
 {footer:Executado por\\: $userTag:$authorAvatar}
 {image:$randomText[https://i.pinimg.com/originals/6f/c2/5f/6fc25fdd3e22d89b19c3ea76d11789e6.gif;https://i.pinimg.com/originals/b0/37/a0/b037a0d27fc2fce28cd279561ec89825.gif;https://media1.tenor.com/images/78095c007974aceb72b91aeb7ee54a71/tenor.gif?itemid=5095865;https://acegif.com/wp-content/uploads/anime-kissin-8.gif]}
-`
-}
 ]`
  })
 
