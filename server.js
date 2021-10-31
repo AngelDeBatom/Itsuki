@@ -46,8 +46,9 @@ interpreter: true
 })
 
 //Arquivos principais do bot
-require('./Utils/callbacks')(bot);
-require('./Utils/variables')(bot);
+require('./Utils/status.js')(bot);
+require('./Utils/callbacks.js')(bot);
+require('./Utils/variables.js')(bot);
 
 //Requerindo a pasta de comandos
 bot.loadCommands(`./Comandos/`)
