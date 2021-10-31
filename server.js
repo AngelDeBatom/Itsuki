@@ -45,6 +45,13 @@ interpreter: true
   },  
 })
 
+//Configurando o Client D.JS
+const { Client } = require('discord.js');
+const client = new Discord.Client({
+  disableMentions: 'everyone',
+  disableMentioned: 'here'
+});
+
 //Arquivos principais do bot
 require('./Utils/status.js')(bot);
 require('./Utils/callbacks.js')(bot);
