@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const aoijs = require('aoi.js');
+const Aoijs = require('aoi.js');
 const express = require('express');
 const app = express();
 app.get("/", (request, response) => {
@@ -30,7 +30,7 @@ firebase.initializeApp(firebaseConfig);
 //Definindo ZenitsuDB como a database para o client
 const db = firebase.firestore();
 
-const bot = new aoijs.Bot({
+const bot = new Aoijs.Bot({
 token: process.env.token, //Discord Bot Token
 prefix: "$getServerVar[prefix]", //Discord Bot Prefix
 mobile: false,
