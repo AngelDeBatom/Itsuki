@@ -35,7 +35,7 @@ token: process.env.token, //Discord Bot Token
 prefix: "$getServerVar[prefix]", //Discord Bot Prefix
 mobile: false,
 sharding: true,
-shardAmount: 0,
+shardAmount: 2,
 autoUpdate: true,
 fetchInvites: true,
 suppressAllErrors: true,
