@@ -18,7 +18,7 @@ status: "idle",
 time: 12
 })
 bot.status({
-text: "🔧 Sendo Desenvolvido.", 
+text: "😬 Passando por uma série de reformas...", 
 type: "STREAMING", 
 status: "idle",
 time: 12
