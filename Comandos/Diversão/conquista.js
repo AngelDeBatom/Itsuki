@@ -13,8 +13,17 @@ $reply[$messageID;
 {footer:Executado por\\: $userTag:$authorAvatar}
 {timestamp:ms}
 ;yes]
-$onlyIf[$message!=;$getServerVar[emojie] » **$username**, informe a mensagem que aparecerá nos stories do Donal J. Trump!]
-$suppressErrors[$getServerVar[emojie] » **$username**, algo deu errado ao tentar executar o comando!]
-$globalCooldown[5s;$getServerVar[emojie] » **$username**, calma ai apressadinho espere **\`[ $replaceText[$replaceText[$getCooldownTime[5s;globalUser;conquista;$authorID];seconds;Segundos];second;Segundo] ]\`** para executar o comando novamente!]
+$onlyIf[$message!=;
+$getServerVar[emojie] **Error**
+$getServerVar[emojin]╰ **$username**, informe a mensagem que aparecerá nos stories do Donal J. Trump!
+]
+$suppressErrors[
+$getServerVar[emojie] **Error**
+$getServerVar[emojin]╰ **$username**, algo deu errado ao tentar executar o comando!
+]
+$globalCooldown[5s;
+$getServerVar[emojie] **Error**
+$getServerVar[emojin]╰ **$username**, espere \`$replaceText[$replaceText[$getCooldownTime[5s;globalUser;conquista;$authorID];seconds;Segundos];second;Segundo]\` para executar o comando novamente!
+]
 `
 }
