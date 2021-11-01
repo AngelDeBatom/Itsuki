@@ -23,4 +23,10 @@ type: "STREAMING",
 status: "idle",
 time: 12
 })
+bot.status({
+text: "⚡ $getServerVar[botversion]", 
+type: "PLAYING",
+status: "online",
+time: 12
+})
 }
