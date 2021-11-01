@@ -13,8 +13,11 @@ $reply[$messageID;{author:Carteira de $username[$findUser[$message]]:$userAvatar
 > <:pet:901974769728102460> » **Pet** **\`[ $getGlobalUserVar[pet;$findUser[$message]] ( $getGlobalUserVar[petname;$findUser[$message]] ) ]\`**
 }{color:F39A63};yes]
 
-$suppressErrors[$getServerVar[emojie] » **$username**, algo deu errado ao tentar executar o comando!]
-$globalCooldown[5s;$getServerVar[emojie] » **$username**, calma ai apressadinho espere **\`[ $replaceText[$replaceText[$getCooldownTime[5s;globalUser;bal;$authorID];seconds;Segundos];second;Segundo] ]\`** para executar o comando novamente!]
+$suppressErrors[
+$getServerVar[emojie] **Error**
+$getServerVar[emojin]╰ **$username**, algo deu errado ao tentar executar o comando!]
+$globalCooldown[5s;$getServerVar[emojie] **Error**
+$getServerVar[emojin]╰ **$username**, calma ai apressadinho espere **\`[ $replaceText[$replaceText[$getCooldownTime[5s;globalUser;bal;$authorID];seconds;Segundos];second;Segundo] ]\`** para executar o comando novamente!]
 `
 }, {
 name: "$alwaysExecute",
