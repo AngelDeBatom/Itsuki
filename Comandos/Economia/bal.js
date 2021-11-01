@@ -11,13 +11,13 @@ $reply[$messageID;{author:Carteira de $username[$findUser[$message]]:$userAvatar
 > <:gasolina:895413288832221186> » **Gasolina** **\`[ $getGlobalUserVar[gasolina;$findUser[$message]]/100 ]\`**
 > <:mongodb:895524206291325008> » **Nível** ***\`[ $getGlobalUserVar[lvl;$findUser[$message]] » $sum[$getGlobalUserVar[lvl;$findUser[$message]];1] ( $getGlobalUserVar[xp;$findUser[$message]] XP ) next ( $getGlobalUserVar[rxp;$findUser[$message]] XP ) ]\`**, Rank Position **\`[ $getLeaderboardInfo[lvl;$findUser[$message];globaluser;top] ]\`**
 > <:pet:901974769728102460> » **Pet** **\`[ $getGlobalUserVar[pet;$findUser[$message]] ( $getGlobalUserVar[petname;$findUser[$message]] ) ]\`**
-}{color:F39A63};yes]
+}{color:$getServerVar[embedscolor]};yes]
 
 $suppressErrors[
 $getServerVar[emojie] **Error**
 $getServerVar[emojin]╰ **$username**, algo deu errado ao tentar executar o comando!]
 $globalCooldown[5s;$getServerVar[emojie] **Error**
-$getServerVar[emojin]╰ **$username**, calma ai apressadinho espere **\`[ $replaceText[$replaceText[$getCooldownTime[5s;globalUser;bal;$authorID];seconds;Segundos];second;Segundo] ]\`** para executar o comando novamente!]
+$getServerVar[emojin]╰ **$username**, espere \`$replaceText[$replaceText[$getCooldownTime[5s;globalUser;bal;$authorID];seconds;Segundos];second;Segundo]\` para executar o comando novamente!]
 `
 }, {
 name: "$alwaysExecute",
