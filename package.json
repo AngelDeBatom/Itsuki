@@ -1,6 +1,6 @@
 {
-  "name": "SomaBot",
-  "version": "0.0.4",
+  "name": "Zenitsu",
+  "version": "0.0.5",
   "description": "",
   "main": "server.js",
   "scripts": {
@@ -10,10 +10,10 @@
     "node": "12.x"
   },
   "keywords": [],
-  "author": "",
+  "author": "Angel ᴼᴺ",
   "license": "ISC",
   "dependencies": {
-    "aoi.js": "^4.5.0",
+    "aoi.js": "^4.6.0",
     "express": "^4.17.1",
     "aoijs.firebase": "^1.0.4",
     "node-opus": "^0.3.3",
