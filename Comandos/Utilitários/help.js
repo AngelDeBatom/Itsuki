@@ -76,10 +76,7 @@ $interactionReply[;{author:Help - Economia:$authorAvatar:}
 **deposit - $commandInfo[deposit;aliases]**\n$commandInfo[deposit;description]
 **fish - $commandInfo[fish;aliases]**\n$commandInfo[fish;description]
 **roubar - $commandInfo[roubar;aliases]**\n$commandInfo[roubar;description]
-**toplevel - $commandInfo[toplevel;aliases]**\n$commandInfo[toplevel;description]
-**topxp - $commandInfo[topxl;aliases]**\n$commandInfo[topxp;description]
-**toptéocoins - $commandInfo[toptéocoins;aliases]**\n$commandInfo[toptéocoins;description]
-**toppaypal - $commandInfo[toppaypal;aliases]**\n$commandInfo[toppaypal;description]
+**rank - $commandInfo[rank;aliases]**\n$commandInfo[rank;description]
 **withdrawn - $commandInfo[withdrawn;aliases]**\n$commandInfo[withdrawn;description]
 **work - $commandInfo[work;aliases]**\n$commandInfo[work;description]
 }
