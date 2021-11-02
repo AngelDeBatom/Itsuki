@@ -25,7 +25,7 @@ const firebaseConfig = {
   measurementId: "G-VE8BXZF72D"
 };
 //Iniciando a Firebase
-firebase.initializeApp(firebaseConfig);
+const test = firebase.initializeApp(firebaseConfig);
 //Definindo ZenitsuDB como a database para o client
 const db = firebase.firestore();
 
@@ -38,7 +38,7 @@ shardAmount: 2,
 autoUpdate: true,
 fetchInvites: true,
 suppressAllErrors: true,
-db: firebase,
+db: test,
 intents: "all",
 debugs:{
 interpreter: true
