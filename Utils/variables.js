@@ -28,6 +28,6 @@ rxp: "100",
 hotel: "false",
 quartos: "0",
 funcionarios: "0",
-botversion: "Zenitsu 0.0.5A",
+botversion: "Zenitsu 1.0.1",
 })
 }
