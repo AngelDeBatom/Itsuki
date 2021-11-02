@@ -38,7 +38,7 @@ shardAmount: 2,
 autoUpdate: true,
 fetchInvites: true,
 suppressAllErrors: true,
-db: firebaseConfig,
+db: firebase,
 intents: "all",
 debugs:{
 interpreter: true
