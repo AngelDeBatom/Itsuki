@@ -70,6 +70,7 @@ bot.onJoined();
 bot.onLeave();
 
 bot.variables({
+muted: "",
 embedscolor: "7B75AB",
 emojie: "<:zenitsu_crying:903753184709849158>",
 emojin: "<:nada:895112926678097930>",
