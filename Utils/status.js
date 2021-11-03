@@ -1,5 +1,11 @@
 module.exports = (bot) => {
 bot.status({
+text: "☀️ Luz do sol [$getServerVar[prefix]help]",
+type: "LISTENING",
+status: "online",
+time: 12
+})
+bot.status({
 text: "🍙 Cara, eu amo bolinho de arroz!", 
 type: "STREAMING", 
 status: "idle",
