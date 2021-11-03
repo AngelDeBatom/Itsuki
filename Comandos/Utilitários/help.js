@@ -23,8 +23,8 @@ $interactionReply[;
 Olá **$username**, seja bem-vindo(a) a página inicial do meu help! Para ver mais dos meus comandos reaja com alguma categoria dos botões abaixo.
 }
 {timestamp:ms}
-{color:F39A63}
-;{actionRow:Diversão,2,1,click:Música,2,1,click2:Economia,2,1,click3:Utilidades,2,1,click4:Moderação,2,1,click5};64;7]
+{color:$getServerVar[embedscolor]}
+;{actionRow:Diversão,2,4,click:Música,2,4,click2:Utilidades,2,4,click4:Moderação,2,4,click5};64;7]
 `
 }, {
 name: "click",
@@ -40,8 +40,8 @@ $interactionReply[;
 **trump - $commandInfo[trump;aliases]**\n$commandInfo[trump;description]
 **kiss - $commandInfo[kiss;aliases]**\n$commandInfo[kiss;description]
 }
-{color:F39A63}
-;{actionRow:Página Inicial,2,1,pi:Música,2,1,click2:Economia,2,1,click3:Utilidades,2,1,click4:Moderação,2,1,click5};64;7]
+{color:$getServerVar[embedscolor]}
+;{actionRow:Página Inicial,2,4,pi:Música,2,4,click2:Utilidades,2,4,click4:Moderação,2,4,click5};64;7]
 `
 }, {
 name: "click2",
@@ -60,8 +60,8 @@ $interactionReply[;
 **resume - $commandInfo[resume;aliases]**\n$commandInfo[resume;description]
 **disconnect - $commandInfo[disconnect;aliases]**\n$commandInfo[disconnect;description]
 }
-{color:F39A63}
-;{actionRow:Página Inicial,2,1,pi:Diversão,2,1,click:Economia,2,1,click3:Utilidades,2,1,click4:Moderação,2,1,click5};64;7]
+{color:$getServerVar[embedscolor]}
+;{actionRow:Página Inicial,2,4,pi:Diversão,2,4,click:Utilidades,2,4,click4:Moderação,2,4,click5};64;7]
 `
 }, {
 name: "click4",
@@ -74,7 +74,7 @@ $interactionReply[;
 **ping - $commandInfo[ping;aliases]**\n$commandInfo[ping;description]
 **botinfo - $commandInfo[botinfo;aliases]**\n$commandInfo[botinfo;description]
 }
-{color:F39A63};{actionRow:Página Inicial,2,1,pi:Diversão,2,1,click:Música,2,1,click2:Economia,2,1,click3:Moderação,2,1,click5};64;7]
+{color:$getServerVar[embedscolor]};{actionRow:Página Inicial,2,4,pi:Diversão,2,4,click:Música,2,4,click2:Moderação,2,4,click5};64;7]
 $let[discord;<:discord:830020052069515264>]
 `
 }, {
@@ -94,8 +94,10 @@ $get[mod] » Olá **$username**! Seja bem-vindo(a) a **Aba de Moderação**!\n
 **tempmute - $commandInfo[tempmute;aliases]**\n$commandInfo[tempmute;description]
 **setwelcome - $commandInfo[setwelcome;aliases]**\n$commandInfo[setwelcome;description]
 **setwelcomemsg - $commandInfo[setwelcomemsg;aliases]**\n$commandInfo[setwelcomemsg;description]
-}{color:F39A63}
-;{actionRow:Página Inicial,2,1,pi:Diversão,2,1,click:Música,2,1,click2:Economia,2,1,click3:Utilidades,2,1,click4};64;7]
+**setleave - $commandInfo[setleave;aliases]**\n$commandInfo[setleave;description]
+**setleavemsg - $commandInfo[setleave;aliases]**\n$commandInfo[setleavedescription]
+}{color:$getServerVar[embedscolor]}
+;{actionRow:Página Inicial,2,4,pi:Diversão,2,4,click:Música,2,4,click2:Utilidades,2,4,click4};64;7]
 $let[mod;<:dev_1:830020861703749632>]
 `
 }, {
