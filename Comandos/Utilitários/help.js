@@ -95,7 +95,7 @@ $get[mod] » Olá **$username**! Seja bem-vindo(a) a **Aba de Moderação**!\n
 **setwelcome - $commandInfo[setwelcome;aliases]**\n$commandInfo[setwelcome;description]
 **setwelcomemsg - $commandInfo[setwelcomemsg;aliases]**\n$commandInfo[setwelcomemsg;description]
 **setleave - $commandInfo[setleave;aliases]**\n$commandInfo[setleave;description]
-**setleavemsg - $commandInfo[setleave;aliases]**\n$commandInfo[setleavedescription]
+**setleavemsg - $commandInfo[setleave;aliases]**\n$commandInfo[setleavemsg;description]
 }{color:$getServerVar[embedscolor]}
 ;{actionRow:Página Inicial,2,4,pi:Diversão,2,4,click:Música,2,4,click2:Utilidades,2,4,click4};64;7]
 $let[mod;<:dev_1:830020861703749632>]
