@@ -13,7 +13,7 @@ Olá **$username**, eu me chamo $username[$clientid], tenho 13 anos e sou uma si
 Vivo nesse mundo desde 5 de outubro de 2021 para garantir a diversão e a moderação no seu servidor. :D
 
 <:bot:897548336670834789> **Informações**
-> » Criadores **\`( $userTag[$botownerid] e $userTag[542305880054431764] )\`**
+> » Criadores **\`( $userTag[$botownerid] )\`**
 > » Prefixo: **\`( Servidor: $getServerVar[prefix] | Padrão: s_ )\`**
 > » Total de usuários ***\`[ $allMembersCount ]\`***
 > » Total de servidores que estou: **\`( $serverCount )\`**
