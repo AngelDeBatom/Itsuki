@@ -3,7 +3,7 @@ name: "help",
 aliases: ["ajuda"],
 description: "Informações sobre os comandos!",
 code: `
-   $buttonCollector[$get[id];$authorID;1m;pi,click,click2,click3,click4,click5;pi,click,click2,click3,click4,click5;,,64]   
+   $buttonCollector[$get[id];$authorID;1m;pi,click,click2,click4,click5;pi,click,click2,click4,click5;,,64]   
 $let[id;$apiMessage[$channelID;;
 {author:Help - Página Inicial:$authorAvatar:}
 {description:
