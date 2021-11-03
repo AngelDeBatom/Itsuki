@@ -10,9 +10,8 @@ $let[id;$apiMessage[$channelID;;
 Olá **$username**, seja bem-vindo(a) a página inicial do meu help! Para ver mais dos meus comandos reaja com alguma categoria dos botões abaixo.
 }
 {timestamp:ms}
-{color:F39A63}
-;{actionRow:Diversão,2,1,click:Música,2,1,click2:Economia,2,1,click3:Utilidades,2,1,click4:Moderação,2,1,click5};;yes]]
-$setVar[comandos;$sum[$getVar[comandos];1]]
+{color:$getServerVar[embedscolor]}
+;{actionRow:Diversão,2,4,click:Música,2,4,click2:Utilidades,2,4,click4:Moderação,2,4,click5};;yes]]
 `
 }, {
 name: "pi",
@@ -63,25 +62,6 @@ $interactionReply[;
 }
 {color:F39A63}
 ;{actionRow:Página Inicial,2,1,pi:Diversão,2,1,click:Economia,2,1,click3:Utilidades,2,1,click4:Moderação,2,1,click5};64;7]
-`
-}, {
-name: "click3",
-type: "awaitedCommand",
-code: `
-$interactionReply[;{author:Help - Economia:$authorAvatar:}
-{description:💸 » Olá **$username**! Seja bem-vindo(a) a **Aba de Economia**!\n
-**bal - $commandInfo[bal;aliases]**\n$commandInfo[bal;description]
-**cooldown - $commandInfo[cooldown;aliases]**\n$commandInfo[cooldown;description]
-**daily - $commandInfo[daily;aliases]**\n$commandInfo[daily;description]
-**deposit - $commandInfo[deposit;aliases]**\n$commandInfo[deposit;description]
-**fish - $commandInfo[fish;aliases]**\n$commandInfo[fish;description]
-**roubar - $commandInfo[roubar;aliases]**\n$commandInfo[roubar;description]
-**rank - $commandInfo[rank;aliases]**\n$commandInfo[rank;description]
-**withdrawn - $commandInfo[withdrawn;aliases]**\n$commandInfo[withdrawn;description]
-**work - $commandInfo[work;aliases]**\n$commandInfo[work;description]
-}
-{color:F39A63}
-;{actionRow:Página Inicial,2,1,pi:Diversão,2,1,click:Música,2,1,click2:Utilidades,2,1,click4:Moderação,2,1,click5};64;7]
 `
 }, {
 name: "click4",
