@@ -18,7 +18,7 @@ code: `
 $setServerVar[welcomemsg;$message]
 $reply[$messageID;
 {timestamp:ms}
-{color:F39A63}
+{color:$getServerVar[embedscolor]}
 {author:Set Welcome Message:$authorAvatar}
 {description:
 <:correto:895110679495839785> » **$username**, a mensagem de welcome foi alterada para:\n
@@ -29,7 +29,7 @@ $replaceText[$message;\`;]
 ;yes]
 $onlyIf[$message!=;
 {timestamp:ms}
-{color:F39A63}
+{color:$getServerVar[embedscolor]}
 {author:Set Welcome Message:$authorAvatar}
 {description:
 <:errado:895110700500934667> » **$username**, vejo que esta com dificuldade para alterar a mensagem de welcome, veja minhas variáveis disponíveis de welcome.
