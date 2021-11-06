@@ -1,37 +1,31 @@
 module.exports = (bot) => {
 bot.status({
 text: "🧠 | Working the mind",
-type: "LISTENING",
+type: "PLAYING",
 status: "online",
 time: 12
 })
 bot.status({
-text: "🍙 Cara, eu amo bolinho de arroz!", 
+text: "📦 | Working on version 1.0.2", 
 type: "STREAMING", 
-status: "idle",
+status: "online",
 time: 12
 })
 bot.status({
-text: "Com $numberSeparator[$allMembersCount] amiguinhos! 💛💛💛", 
+text: "🍮 | I love pudding", 
 type: "PLAYING", 
-status: "idle",
+status: "online",
 time: 12
 })
 bot.status({
-text: "Com $serverCount servidores! 🌏🥰", 
+text: "🪐 | A simple bot ready to moderate and entertain your server", 
 type: "PLAYING", 
-status: "idle",
+status: "online",
 time: 12
 })
 bot.status({
-text: "😬 Passando por uma série de reformas...", 
+text: "💔 | Unavailable Sharding", 
 type: "STREAMING", 
-status: "idle",
-time: 12
-})
-bot.status({
-text: "⚡ $getServerVar[botversion]", 
-type: "PLAYING",
 status: "online",
 time: 12
 })
