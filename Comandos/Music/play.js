@@ -8,7 +8,7 @@ $if[$queueLength==0]
 $suppressErrors[<:errado:895110700500934667> » **$username**, algo deu errado ao tentar executar o comando!]
 $onlyIf[$message!=;<:errado:895110700500934667> » **$username**, eu preciso do nome da música para encontrar um som!]
 $onlyIf[$voiceID!=;<:errado:895110700500934667> » **$username**, você não está em um canal de voz, entre em um!]
-$elseif[$queueLength=<1]
+$elseif[$queueLength<=1]
 **\`( $playSong[$noMentionMessage;5m;yes;yes;<:errado:895110700500934667> » **$username**, não foi possível encontrar a música!] )\`** foi adicionado a queue!
 $suppressErrors[<:errado:895110700500934667> » **$username**, algo deu errado ao tentat executar o comando!]
 $onlyIf[$message!=;<:errado:895110700500934667> » **$username**, eu preciso do nome da música para encontrar um som!]
