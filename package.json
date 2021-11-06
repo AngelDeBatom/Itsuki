@@ -1,7 +1,6 @@
-
 {
-  "name": "Sunshine™",
-  "version": "1.0.2",
+  "name": "Zenitsu",
+  "version": "0.0.5",
   "description": "",
   "main": "server.js",
   "scripts": {
@@ -16,7 +15,6 @@
   "dependencies": {
     "aoi.js": "^4.6.0",
     "express": "^4.17.1",
-    "aoijs.firebase": "^1.0.4",
     "node-opus": "^0.3.3",
     "opus": "^0.0.0",
     "ytdl-core": "^4.9.1"
