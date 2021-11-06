@@ -12,7 +12,7 @@ app.listen(process.env.PORT); // Recebe solicitações que o deixa online
 
 const bot = new Aoijs.Bot({
 token: process.env.token, //Discord Bot Token
-prefix: "$getServerVar[prefix]", //Discord Bot Prefix
+prefix: "s!", //Discord Bot Prefix
 mobile: false,
 sharding: true,
 shardAmount: 2,
@@ -77,7 +77,7 @@ emojie: "<:errado:895110700500934667>",
 emojin: "<:nada:895112926678097930>",
 comandos: "0",
 devs: "838166653039935538;542305880054431764",
-prefix: "s!"
+prefix: "//"
 }, 'main')
 //Welcome System
 bot.variables({
