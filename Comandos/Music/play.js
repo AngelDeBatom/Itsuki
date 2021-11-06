@@ -28,7 +28,7 @@ type: "musicStartCommand",
 channel: "$channelID",      
 code: `
 $if[$queueLength==0]
-$elseif[$queueLength>1]
+$elseif[$queueLength!=0]
 Tocando agora: **\`( $songInfo[title] )\`**, pedido por: **$username[$songInfo[userID]]**.
 $endelseif
 $endif
