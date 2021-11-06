@@ -12,11 +12,11 @@ app.listen(process.env.PORT); // Recebe solicitações que o deixa online
 
 const bot = new Aoijs.Bot({
 token: process.env.token, //Discord Bot Token
-prefix: "s!", //Discord Bot Prefix
+prefix: "$getServerVar[prefix]", //Discord Bot Prefix
 mobile: false,
 sharding: true,
 shardAmount: 2,
-autoUpdate: true,
+autoUpdate: false,
 fetchInvites: true,
 suppressAllErrors: true,
 /*db: ,*/
@@ -31,34 +31,7 @@ require('./Utils/status.js')(bot);
 require('./Utils/callbacks.js')(bot);
 
 //Requerindo a pasta de comandos
- 
-const loader = new Aoijs.LoadCommands(bot)
-loader.load(bot.cmd, "./Comandos/")
- 
-loader.setColors({
-  walking: ["blink", "dim", "fgWhite"],
-  failedWalking: {
-    name: ["bright", "fgYellow", "underline"],
- 
-    text: ["bright", "fgRed"]
-  },
-  typeError: {
-    command: ["bright", "fgYellow"],
-    type: ["fgYellow"],
-    text: ["bright", "fgRed"]
-  },
-  failLoad: {
-    command: ["bright", "fgMagenta"],
-    type: ["fgRed"],
-    text: ["bright", "fgRed"],
-  },
-  loaded: {
-    command: ["bright", "fgCyan"],
-    type: ["bright", "fgBlue"],
-    text: ["bright", "fgGreen"]
-  },
- 
-})
+bot.loadCommands("./Comandos/")
 
 //Ativando as respostas do bot
 bot.onMessage({
@@ -67,7 +40,7 @@ bot.onMessage({
 })
 
 bot.onInteractionCreate();
-bot.onJoin();
+bot.onJoined();
 bot.onLeave();
 
 bot.variables({
@@ -78,14 +51,14 @@ emojin: "<:nada:895112926678097930>",
 comandos: "0",
 devs: "838166653039935538;542305880054431764",
 prefix: "//"
-}, 'main')
+})
 //Welcome System
 bot.variables({
 welcomemsg: "Olá {user.mention}, seja bem-vindo(a) ao {guild.name}`({guild.id})`.",
 welcomech: "",
 leavemsg: "{user.mention} saiu do servidor, tomará que volto um dia.",
 leavech: ""
-}, 'main')
+})
 
 
 
