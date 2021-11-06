@@ -33,7 +33,7 @@ require('./Utils/callbacks.js')(bot);
 //Requerindo a pasta de comandos
  
 const loader = new Aoijs.LoadCommands(bot)
-loader.load(bot.cmd, "./commands/")
+loader.load(bot.cmd, "./Comandos/")
  
 loader.setColors({
   walking: ["blink", "dim", "fgWhite"],
