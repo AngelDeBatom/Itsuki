@@ -20,6 +20,7 @@ $addCmdReactions[🤔]
 $endelseif
 $endif
 $onlyIf[$isBot!=true;]
+$onlyBotPerms[ADD_REACTIONS;]
 $suppressErrors[]
 $onlyForIDs[$botownerid;]
 `
