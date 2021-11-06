@@ -67,7 +67,7 @@ bot.onMessage({
 })
 
 bot.onInteractionCreate();
-bot.onJoined();
+bot.onJoin();
 bot.onLeave();
 
 bot.variables({
