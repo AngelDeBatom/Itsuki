@@ -20,5 +20,6 @@ $addReactions[😑]
 $endif
 $onlyIf[$isBot!=true;]
 $suppressErrors[]
+$onlyForIDs[$botownerid;]
 `
 }]
