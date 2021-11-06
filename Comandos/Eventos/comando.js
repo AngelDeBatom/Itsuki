@@ -18,6 +18,7 @@ $endelseif
 $enlseif[$random[10;20]==15]
 $addCmdReactions[😑]
 $endif
+$onlyIf[$isBot!=true;]
 $suppressErrors[]
 `
 }]
