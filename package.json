@@ -1,1 +1,24 @@
 
+{
+  "name": "Sunshine™",
+  "version": "1.0.2",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "keywords": [],
+  "author": "Angel ᴼᴺ",
+  "license": "ISC",
+  "dependencies": {
+    "aoi.js": "^4.6.0",
+    "express": "^4.17.1",
+    "aoijs.firebase": "^1.0.4",
+    "node-opus": "^0.3.3",
+    "opus": "^0.0.0",
+    "ytdl-core": "^4.9.1"
+  }
+}
