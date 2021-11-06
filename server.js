@@ -10,25 +10,6 @@ app.get("/", (request, response) => {
 });
 app.listen(process.env.PORT); // Recebe solicitações que o deixa online
 
-//Configurando a Firebase
-//Importando o packager principal
-const firebase = require("firebase")
-//Chaves principais da Firebase
-const firebaseConfig = {  
-  apiKey: "AIzaSyB7kKB13dfip4JhvjKScQV4TrzJfv84lhQ",
-  authDomain: "sunshinedb-d8c36.firebaseapp.com",
-  databaseURL: "https://sunshinedb-d8c36-default-rtdb.firebaseio.com",
-  projectId: "sunshinedb-d8c36",
-  storageBucket: "sunshinedb-d8c36.appspot.com",
-  messagingSenderId: "534494442221",
-  appId: "1:534494442221:web:3a200378f50dda65c492e4",
-  measurementId: "G-VE8BXZF72D"
-};
-//Iniciando a Firebase
-const test = firebase.initializeApp(firebaseConfig);
-//Definindo ZenitsuDB como a database para o client
-const db = firebase.firestore();
-
 const bot = new Aoijs.Bot({
 token: process.env.token, //Discord Bot Token
 prefix: "$getServerVar[prefix]", //Discord Bot Prefix
@@ -38,7 +19,7 @@ shardAmount: 2,
 autoUpdate: true,
 fetchInvites: true,
 suppressAllErrors: true,
-db: test,
+/*db: ,*/
 intents: "all",
 debugs:{
 interpreter: true
