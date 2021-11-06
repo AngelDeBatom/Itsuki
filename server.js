@@ -31,7 +31,8 @@ require('./Utils/status.js')(bot);
 require('./Utils/callbacks.js')(bot);
 
 //Requerindo a pasta de comandos
-bot.loadCommands(`./Comandos/`)
+const loader = new aoijs.loadCommands(bot)
+loader.load(bot.cmd,'./commands/')
 
 //Ativando as respostas do bot
 bot.onMessage({
