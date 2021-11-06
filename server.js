@@ -77,8 +77,7 @@ emojie: "<:errado:895110700500934667>",
 emojin: "<:nada:895112926678097930>",
 comandos: "0",
 devs: "838166653039935538;542305880054431764",
-prefix: "s_",
-botversion: "Sunshine 1.0.1",
+prefix: "s!"
 })
 //Welcome System
 bot.variables({
