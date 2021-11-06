@@ -78,14 +78,14 @@ emojin: "<:nada:895112926678097930>",
 comandos: "0",
 devs: "838166653039935538;542305880054431764",
 prefix: "s!"
-})
+}, main)
 //Welcome System
 bot.variables({
 welcomemsg: "Olá {user.mention}, seja bem-vindo(a) ao {guild.name}`({guild.id})`.",
 welcomech: "",
 leavemsg: "{user.mention} saiu do servidor, tomará que volto um dia.",
 leavech: ""
-})
+}, main)
 
 
 
