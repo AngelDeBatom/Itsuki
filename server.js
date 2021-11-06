@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+
 const Aoijs = require('aoi.js');
 const express = require('express');
 const app = express();
@@ -25,13 +25,6 @@ debugs:{
 interpreter: true
   },  
 })
-
-//Configurando o Client D.JS
-const { Client } = require('discord.js');
-const client = new Discord.Client({
-  disableMentions: 'everyone',
-  disableMentioned: 'here'
-});
 
 //Arquivos principais do bot
 require('./Utils/status.js')(bot);
