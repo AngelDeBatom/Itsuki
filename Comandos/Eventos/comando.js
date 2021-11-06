@@ -13,10 +13,10 @@ code: `
 $if[$random[10;20]==10]
 $addCmdReactions[😁]
 $elseif[$random[10;20]==20]
-$addCmdReactions[😔]
+$addCmdReactions[😎]
 $endelseif
 $elseif[$random[10;20]==15]
-$addCmdReactions[😑]
+$addCmdReactions[🤔]
 $endelseif
 $endif
 $onlyIf[$isBot!=true;]
