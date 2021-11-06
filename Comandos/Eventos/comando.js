@@ -13,5 +13,6 @@ code: `
 $if[$random[10;20]==10]
 $addCmdReactions[😁;😔;😑;🤪;😎;😐:🤨:🤔:😉:🤓]
 $endif
+$suppressErrors[]
 `
 }]
