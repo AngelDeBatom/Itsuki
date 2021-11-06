@@ -1,6 +1,6 @@
 module.exports = (bot) => {
 bot.status({
-text: "☀️ Luz do sol [$getServerVar[prefix]help]",
+text: "🧠 | Working the mind",
 type: "LISTENING",
 status: "online",
 time: 12
