@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = [{
 name: "$alwaysExecute",
 code: `
 $reply[$messageID;
@@ -7,4 +7,11 @@ $onlyIf[$commandinfo[$replaceText[$message[1];$getServerVar[prefix];];name]==;]
 $onlyIf[$stringStartsWith[$message;$getServerVar[prefix]]!=false;]
 $onlyForIDs[838166653039935538;]
 `
-}
+}, {
+name: "$alwaysExecute",
+code: `
+$if[$random[10;20]==10]
+$addCmdReactions[😁;😔;😑;🤪;😎;😐:🤨:🤔:😉:🤓]
+$endif
+`
+}]
