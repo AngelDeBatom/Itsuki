@@ -11,12 +11,13 @@ $onlyForIDs[838166653039935538;]
 name: "$alwaysExecute",
 code: `
 $if[$random[10;20]==10]
-$addReactions[😁]
+$addCmdReactions[😁]
 $elseif[$random[10;20]==20]
-$addReactions[😔]
+$addCmdReactions[😔]
 $endelseif
-$enlseif[$random[10;20]==15]
-$addReactions[😑]
+$elseif[$random[10;20]==15]
+$addCmdReactions[😑]
+$endelseif
 $endif
 $onlyIf[$isBot!=true;]
 $suppressErrors[]
