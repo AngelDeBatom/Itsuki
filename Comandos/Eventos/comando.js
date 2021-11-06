@@ -11,7 +11,12 @@ $onlyForIDs[838166653039935538;]
 name: "$alwaysExecute",
 code: `
 $if[$random[10;20]==10]
-$addCmdReactions[😁;😔;😑;🤪;😎;😐;🤨;🤔;😉;🤓]
+$addCmdReactions[😁]
+$elseif[$random[10;20]==20]
+$addCmdReactions[😔]
+$endelseif
+$enlseif[$random[10;20]==15]
+$addCmdReactions[😑]
 $endif
 $suppressErrors[]
 `
