@@ -31,8 +31,10 @@ require('./Utils/status.js')(bot);
 require('./Utils/callbacks.js')(bot);
 
 //Requerindo a pasta de comandos
-const loader = new Aoijs.loadCommands(bot)
-loader.load(bot.cmd,'./commands/')
+ 
+const loader = new Aoijs.LoadCommands(bot)
+loader.load(bot.cmd, "./commands/")
+ 
 loader.setColors({
   walking: ["blink", "dim", "fgWhite"],
   failedWalking: {
@@ -56,7 +58,7 @@ loader.setColors({
     text: ["bright", "fgGreen"]
   },
  
-}) 
+})
 
 //Ativando as respostas do bot
 bot.onMessage({
