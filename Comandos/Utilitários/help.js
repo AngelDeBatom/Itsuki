@@ -26,6 +26,6 @@ $addField[🍕 Fun;
 $footer[Server hosted on shard #$shardID]
 $addTimestamp
 $color[$getServerVar[embedscolor]]
-$globalCooldown[5s;<:errado:895110700500934667> **| $username**, Wait \`$getCooldownTime[5s;globalUser;help;$authorID]\` to use the command again!]
+$globalCooldown[5s;$getServerVar[emojie] **| $username**, Wait \`$getCooldownTime[5s;globalUser;help;$authorID]\` to use the command again!]
 `
 }
