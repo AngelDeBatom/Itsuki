@@ -3,8 +3,7 @@ name: "botinfo",
 description: "Informações detalhadas sobre o bot!",
 code: `
 
-$apiMessage[$channelID;;
-<@$authorID>
+$apiMessage[$channelID;<@$authorID>;
 {author:Bot Info:$authorAvatar:}
 {color:$getServerVar[embedscolor]}
 {description:
@@ -22,7 +21,7 @@ I've been living in this world since October 5, 2021 to ensure fun and moderatio
  **Statistics**
 > ⏰ Uptime \`$uptime\`
 > 🛰️ Ping \`$pingms\`
-> 📆 Creation date: \`October 5, 2021 (5/10/2021)\`
+> 📆 Creation date \`October 5, 2021 (5/10/2021)\`
 }
 ;{actionRow:Invite me,2,5,https\\://discord.com/api/oauth2/authorize?client_id=895106609406160978&permissions=8&scope=bot:Support,2,5,https\\://discord.gg/3WTCz2vpBs};;no]
 
