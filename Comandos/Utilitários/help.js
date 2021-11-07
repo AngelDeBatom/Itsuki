@@ -15,7 +15,7 @@ $addField[🔧 Configurable;
 **setprefix \`|\` setmute \`|\` tempmute \`|\` set-wchannel \`|\` set-wmsg \`|\` set-wimg \`|\` set-wtitle \`|\` set-autorole**
 ]
 $addField[🗺️ General;
-**ping \`|\` botinfo \`|\` userinfo**
+**invite \`|\` ping \`|\` botinfo \`|\` userinfo**
 ]
 $addField[🎶 Music;
 **play \`|\` skip \`|\` queue \`|\` loop \`|\` pause \`|\` stop \`|\` resume \`|\` disconnect**
