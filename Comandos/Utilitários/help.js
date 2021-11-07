@@ -1,4 +1,4 @@
-module.exports = [{
+module.exports = {
 name: "help",
 aliases: ["ajuda"],
 description: "Informações sobre os comandos!",
