@@ -56,6 +56,8 @@ prefix: "s!"
 bot.variables({
 welcomemsg: "Olá {user.mention}, seja bem-vindo(a) ao {guild.name}`({guild.id})`.",
 welcomech: "",
+welcomeimg: "",
+welcometitle: "",
 leavemsg: "{user.mention} saiu do servidor, tomará que volto um dia.",
 leavech: ""
 })
