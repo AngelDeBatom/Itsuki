@@ -1,20 +1,17 @@
 module.exports = {
-name: "setmute",
-aliases: ["setmuterole"],
+name: "set-mute-role",
 description: "Definir cargo de mute!",
 code: `
-$reply[$messageID;
-{color:F39A63}
-{title:Mute Role}
-{description:<:correto:895110679495839785> » **$username**, <@&$findRole[$message[1]]> foi definido como cargo de mute!}
-;yes]
+<@$authorID>
+$addTimestamp
+$color[$getServerVar[embedscolor]]
+$title[Mute Role]
+$description[**$username**, <@&$findRole[$message[1]]> was defined as the role of silenced!]
 $setServerVar[muted;$findRole[$message[1]]]
-$onlyIf[$roleExists[$findRole[$message[1]]]==true;<:errado:895110700500934667> » **$username**, esse cargo não existe!]
-$onlyIf[$message[1]!=;
-<:errado:895110700500934667> » **$username**, modo de uso incorreto tente: \`$getServerVar[prefix]setmute <role | roleID>\`]
-$onlyPerms[manageroles;<:errado:895110700500934667> » **$username**, você precisa da permissão \`Gerenciar Cargos\` pra utilizar esse comando!]
-$onlyBotPerms[manageroles;<:errado:895110700500934667> » **$username**, eu preciso da permissão \`Gerenciar Cargos\` para utilizar esse comando!]
-$suppressErrors[<:errado:895110700500934667> » **$username**, algo deu errado ao executar o comando, entre em contato com o nosso suporte!]
-$globalCooldown[5s;<:errado:895110700500934667> » **$username**, calma ai apressadinho espere ***\`[ $replaceText[$replaceText[$getCooldownTime[5s;globalUser;setmute;$authorID];seconds;Segundos];second;Segundo] ]\`*** para executar o comando novamente!]
+$onlyIf[$roleExists[$findRole[$message[1]]]==true;$getServerVar[emojie] **| $username**, this role does not exist!]
+$onlyIf[$message[1]!=;$getServerVar[emojie] **| $username**, Incorrect usage mode try \`$getServerVar[prefix]set-mute-role <role | roleID>\`]
+$onlyPerms[manageroles;$getServerVar[emojie] **| $username**, Missing \`Manage Roles\` permission!]
+$onlyBotPerms[manageroles;$getServerVar[emojie] **| $username**, I nedd \`Manage Roles\` permission!]
+$globalCooldown[5s;$getServerVar[emojie] **| $username**, Wait \`$getCooldownTime[5s;globalUser;botinfo;$authorID]\` to use the command again!]
 ` 
 }
