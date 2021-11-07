@@ -1,10 +1,10 @@
 module.exports = {
 name: "help",
-aliases: ["ajuda"],
+aliases: ["commands"],
 description: "Informações sobre os comandos!",
 code: `
 <@$authorID>
-$title[Painel de Ajuda]
+$title[Help Panel]
 $description[
 Qualquer erro encontrado seja ortográfico ou no comando em si reporte utilizando \`$getServerVar[prefix].bug <bug>\`
 ]
@@ -23,9 +23,9 @@ $addField[Music;
 $addField[Fun;
 **hug \`|\` cafuné \`|\` conquista \`|\` happy \`|\` trump \`|\` kiss**
 ]
-$footer[Executado por: $userTag;$authorAvatar]
+$footer[Server hosted on shard #$shardID]
 $addTimestamp
 $color[$getServerVar[embedscolor]]
-$globalCooldown[5s;<:errado:895110700500934667> » **$username**, espere **\`( $replaceText[$replaceText[$getCooldownTime[5s;globalUser;set-wimg;$authorID];seconds;Segundos];second;Segundo] )\`** para executar o comando novamente!]
+$globalCooldown[5s;<:errado:895110700500934667> **| $username**, Wait \`$getCooldownTime[5s;globalUser;help;$authorID]\` to use the command again!]
 `
 }
