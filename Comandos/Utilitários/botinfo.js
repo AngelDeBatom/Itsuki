@@ -15,7 +15,7 @@ Vivo nesse mundo desde 5 de outubro de 2021 para garantir a diversão e a modera
 <:bot:897548336670834789> **Informações**
 > » Criadores **\`( $userTag[$botownerid] )\`**
 > » Prefixo: **\`( Servidor: $getServerVar[prefix] | Padrão: s_ )\`**
-> » Total de usuários ***\`[ $allMembersCount ]\`***
+> » Total de usuários **\`( $allMembersCount )\`**
 > » Total de servidores que estou: **\`( $serverCount )\`**
 <:hospedagem:899694155205345290> **Hospedagem**
 > » Database **\`( FireBase )\`**
