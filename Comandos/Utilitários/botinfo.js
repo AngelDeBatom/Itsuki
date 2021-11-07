@@ -16,14 +16,14 @@ I've been living in this world since October 5, 2021 to ensure fun and moderatio
 > 👥 Total users \`$allMembersCount\`
 > 💙 Total servers \`$serverCount\`
  **Hosting**
-> ☁️ Database \`FireBase )\`
+> ☁️ Database \`FireBase \`
 > ⚡ Host \`Heroku\`
  **Statistics**
 > ⏰ Uptime \`$uptime\`
 > 🛰️ Ping \`$pingms\`
-> 📆 Creation date: **\`( 5 de outubro de 2021 (5/10/2021) )\`**
+> 📆 Creation date: \`October 5, 2021 (5/10/2021)\`
 }
-;{actionRow:Me Adicione,2,5,https\\://discord.com/api/oauth2/authorize?client_id=895106609406160978&permissions=8&scope=bot:Suporte,2,5,https\\://discord.gg/3WTCz2vpBs};;no]
+;{actionRow:Invite me,2,5,https\\://discord.com/api/oauth2/authorize?client_id=895106609406160978&permissions=8&scope=bot:Support,2,5,https\\://discord.gg/3WTCz2vpBs};;no]
 
 $globalCooldown[5s;$getServerVar[emojie] **| $username**, Wait \`$getCooldownTime[5s;globalUser;botinfo;$authorID]\` to use the command again!]
 `
