@@ -3,6 +3,7 @@ name: "set-wchannel",
 description: "Definir um canal de welcome!",
 code: `
 $setServerVar[welcomech;$mentionedChannels[1]]
+$channelSendMessage[$mentionedChannels[1];<:correto:895110679495839785> » Esse canal foi definido como canal de boas-vindas por: **$username**
 $reply[$messageID;
 <:correto:895110679495839785> » **$username**, o canal de welcome foi definido para, <#$mentionedChannels[1]>
 ;yes]
