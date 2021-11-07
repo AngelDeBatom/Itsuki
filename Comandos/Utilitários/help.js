@@ -8,19 +8,19 @@ $title[Help Panel]
 $description[
 Qualquer erro encontrado seja ortográfico ou no comando em si reporte utilizando \`$getServerVar[prefix].bug <bug>\`
 ]
-$addField[Administration;
+$addField[🛠️ Administration;
 **clear \`|\` ban \`|\` unban \`|\` lock \`|\` unlock \`|\` tempmute**
 ]
-$addField[Configurable;
+$addField[🔧 Configurable;
 **setprefix \`|\` setmute \`|\` tempmute \`|\` set-wchannel \`|\` set-wmsg \`|\` set-wimg \`|\` set-wtitle \`|\` set-autorole**
 ]
-$addField[Utilities;
+$addField[🧠 Utilities;
 **ping \`|\` botinfo \`|\` userinfo**
 ]
-$addField[Music;
+$addField[🎶 Music;
 **play \`|\` skip \`|\` queue \`|\` loop \`|\` pause \`|\` stop \`|\` resume \`|\` disconnect**
 ]
-$addField[Fun;
+$addField[🍕 Fun;
 **hug \`|\` cafuné \`|\` conquista \`|\` happy \`|\` trump \`|\` kiss**
 ]
 $footer[Server hosted on shard #$shardID]
