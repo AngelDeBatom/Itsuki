@@ -61,7 +61,7 @@ $description[
 Channel: $channelName[$getServerVar[welcomech]] || $getserverVar[welcomech]
 Message: $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$getServerVar[welcomemsg];{usertag};$usertag];{user.name};$username];{user.mention};<@$authorID>];{guild.name};$serverName];{guild.members};$memberCount];{guild.id};$guildid]
 Dm: $getServerVar[welcomedm]
-Auto-role: $roleName[$getServerVar[autorole]] || $getServerVar[autorole] 
+Auto-role: $getServerVar[autorole] 
 Image:
 \`\`\`
 ]
