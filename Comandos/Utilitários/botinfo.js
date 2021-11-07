@@ -4,6 +4,7 @@ description: "Informações detalhadas sobre o bot!",
 code: `
 
 $apiMessage[$channelID;;
+<@$authorID>
 {author:Bot Info:$authorAvatar:}
 {color:$getServerVar[embedscolor]}
 {description:
