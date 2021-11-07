@@ -14,6 +14,9 @@ clear \`|\` ban \`|\` unban \`|\` lock \`|\` unlock \`|\` tempmute
 $addField[Configurable;
 setprefix \`|\` setmute \`|\` tempmute \`|\` set-wchannel \`|\` set-wmsg \`|\` set-wimg \`|\` set-wtitle \`|\` set-autorole
 ]
+$addField[Utilities;
+ping \`|\` botinfo \`|\` userinfo
+]
 $addField[Music;
 play \`|\` skip \`|\` queue \`|\` loop \`|\` pause \`|\` stop \`|\` resume \`|\` disconnect
 ]
