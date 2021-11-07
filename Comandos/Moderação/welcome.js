@@ -107,6 +107,8 @@ $footer[Executado por: $userTag;$authorAvatar]
 
   
   $setServerVar[welcomeimg;$message]
+$onlyIf[$isValidImageLink[$message]!=false;<:errado:895110700500934667> » **$username**, forneça um url de imagem válido!]
+$onlyIf[$message!=;<:errado:895110700500934667> » **$username**, forneça o url de uma imagem!]
 $onlyPerms[managechannels;<:errado:895110700500934667> » **$username**, você precisa da permissão \`Gerenciar Canais\` para utilizar esse comando!]
 $globalCooldown[5s;<:errado:895110700500934667> » **$username**, calma ai apressadinho espere **\`( $replaceText[$replaceText[$getCooldownTime[5s;globalUser;set-wimg;$authorID];seconds;Segundos];second;Segundo] )\`** para executar o comando novamente!]
 
