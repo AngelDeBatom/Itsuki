@@ -26,6 +26,6 @@ $addField[Fun;
 $footer[Executado por: $userTag;$authorAvatar]
 $addTimestamp
 $color[$getServerVar[embedscolor]]
-$globalCooldown[5s;<:errado:895110700500934667> » **$username**, calma ai apressadinho espere **\`( $replaceText[$replaceText[$getCooldownTime[5s;globalUser;set-wimg;$authorID];seconds;Segundos];second;Segundo] )\`** para executar o comando novamente!]
+$globalCooldown[5s;<:errado:895110700500934667> » **$username**, espere **\`( $replaceText[$replaceText[$getCooldownTime[5s;globalUser;set-wimg;$authorID];seconds;Segundos];second;Segundo] )\`** para executar o comando novamente!]
 `
 }
