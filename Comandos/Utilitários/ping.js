@@ -4,6 +4,7 @@ module.exports = {
   code: `
 
 $setVar[comandos;$sum[$getVar[comandos];1]]
+<@$authorID>
 ⚡ Shard ID \`#$shardID\`
 📡 API Latency \`$pingms\`
 🤖 BOT Latency \`$botPingms\`
