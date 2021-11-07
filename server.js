@@ -45,7 +45,7 @@ bot.onLeave();
 
 bot.variables({
 muted: "",
-embedscolor: "7B75AB",
+embedscolor: "C2E3F2",
 emojie: "<:error:907025300779589652>",
 comandos: "0",
 devs: "838166653039935538;542305880054431764",
