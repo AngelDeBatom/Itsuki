@@ -1,6 +1,5 @@
 module.exports = {
 name: "lock",
-aliases: ["l"],
 description: "Feche um canal!",
 code: `
 
