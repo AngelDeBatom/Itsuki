@@ -6,7 +6,7 @@ code: `
 <@$authorID>
 $title[Help Panel]
 $description[
- \`$getServerVar[prefix].bug <bug>\`
+Any errors found whether spelling or in the command itself report using \`$getServerVar[prefix].bug <bug>\`
 ]
 $addField[🛠️ Administration;
 **clear \`|\` ban \`|\` unban \`|\` lock \`|\` unlock \`|\` tempmute**
