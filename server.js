@@ -46,8 +46,7 @@ bot.onLeave();
 bot.variables({
 muted: "",
 embedscolor: "7B75AB",
-emojie: "<:errado:895110700500934667>",
-emojin: "<:nada:895112926678097930>",
+emojie: "<:error:907025300779589652>",
 comandos: "0",
 devs: "838166653039935538;542305880054431764",
 prefix: "s!"
