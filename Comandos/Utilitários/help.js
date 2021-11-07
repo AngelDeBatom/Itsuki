@@ -3,122 +3,26 @@ name: "help",
 aliases: ["ajuda"],
 description: "Informações sobre os comandos!",
 code: `
-   $buttonCollector[$get[id];$authorID;1m;pi,click,click2,click4,click5;pi,click,click2,click4,click5;,,64]   
-$let[id;$apiMessage[$channelID;;
-{author:Help - Página Inicial:$authorAvatar:}
-{description:
-Olá **$username**, seja bem-vindo(a) a página inicial do meu help! Para ver mais dos meus comandos reaja com alguma categoria dos botões abaixo.
+<@$authorID>
+$title[Painel de Ajuda]
+$description[
+Qualquer erro encontrado seja ortográfico ou no comando em si reporte utilizando \`d.bug <bug>\`
+]
+$addField[Administration;
+clear \`|\` ban \`|\` unban \`|\` lock \`|\` unlock \`|\` tempmute
+]
+$addField[Configurable;
+setprefix \`|\` setmute \`|\` tempmute \`|\` set-wchannel \`|\` set-wmsg \`|\` set-wimg \`|\` set-wtitle \`|\` set-autorole
+]
+$addField[Music;
+play \`|\` skip \`|\` queue \`|\` loop \`|\` pause \`|\` stop \`|\` resume \`|\` disconnect
+]
+$addField[Fun;
+hug \`|\` cafuné \`|\` conquista \`|\` happy \`|\` trump \`|\` kiss
+]
+$footer[Executado por: $userTag;$authorAvatar]
+$addTimestamp
+$color[$getServerVar[embedscolor]]
+$globalCooldown[5s;<:errado:895110700500934667> » **$username**, calma ai apressadinho espere **\`( $replaceText[$replaceText[$getCooldownTime[5s;globalUser;set-wimg;$authorID];seconds;Segundos];second;Segundo] )\`** para executar o comando novamente!]
+`
 }
-{timestamp:ms}
-{color:$getServerVar[embedscolor]}
-;{actionRow:Diversão,2,4,click:Música,2,4,click2:Utilidades,2,4,click4:Moderação,2,4,click5};;yes]]
-`
-}, {
-name: "pi",
-type: "awaitedCommand",
-code: `
-$interactionReply[;
-{author:Help - Página Inicial:$authorAvatar:}
-{description:
-Olá **$username**, seja bem-vindo(a) a página inicial do meu help! Para ver mais dos meus comandos reaja com alguma categoria dos botões abaixo.
-}
-{timestamp:ms}
-{color:$getServerVar[embedscolor]}
-;{actionRow:Diversão,2,4,click:Música,2,4,click2:Utilidades,2,4,click4:Moderação,2,4,click5};64;7]
-`
-}, {
-name: "click",
-type: "awaitedCommand",
-code: `
-$interactionReply[;
-{author:Help - Diversão:$authorAvatar:}
-{description:😜 » Olá **$username**! Seja bem-vindo (a) a **Aba de Diversão**!\n
-**hug - $commandInfo[hug;aliases]**\n$commandInfo[hug;description]
-**cafuné -  $commandInfo[cafuné;aliases]**\n$commandInfo[cafuné;description]
-**conquista - $commandInfo[conquista;aliases]**\n$commandInfo[conquista;description]
-**feliz - $commandInfo[feliz;aliases]**\n$commandInfo[feliz;description]
-**trump - $commandInfo[trump;aliases]**\n$commandInfo[trump;description]
-**kiss - $commandInfo[kiss;aliases]**\n$commandInfo[kiss;description]
-}
-{color:$getServerVar[embedscolor]}
-;{actionRow:Página Inicial,2,4,pi:Música,2,4,click2:Utilidades,2,4,click4:Moderação,2,4,click5};64;7]
-`
-}, {
-name: "click2",
-type: "awaitedCommand",
-code: `
-$interactionReply[;
-{author:Help - Música:$authorAvatar:}
-{description:
-🎶 » Olá **$username**! Seja bem-vindo(a) a **Aba de Música**!\n
-**play - $commandInfo[play;aliases]**\n$commandInfo[play;description]
-**skip - $commandInfo[skip;aliases]**\n$commandInfo[skip;description]
-**queue - $commandInfo[queue;aliases]**\n$commandInfo[queue;description]
-**loop - $commandInfo[loop;aliases]**\n$commandInfo[loop;description]
-**pause - $commandInfo[pause;aliases]**\n$commandInfo[pause;description]
-**stop - $commandInfo[stop;aliases]**\n$commandInfo[stop;description]
-**resume - $commandInfo[resume;aliases]**\n$commandInfo[resume;description]
-**disconnect - $commandInfo[disconnect;aliases]**\n$commandInfo[disconnect;description]
-}
-{color:$getServerVar[embedscolor]}
-;{actionRow:Página Inicial,2,4,pi:Diversão,2,4,click:Utilidades,2,4,click4:Moderação,2,4,click5};64;7]
-`
-}, {
-name: "click4",
-type: "awaitedCommand",
-code: `
-$interactionReply[;
-{author:Help - Utilidades:$authorAvatar:}
-{description:$get[discord] » Olá **$username**! Seja bem-vindo(a) a **Aba de Utilidades**!\n
-**help - $commandInfo[help;aliases]**\n$commandInfo[help;description]
-**ping - $commandInfo[ping;aliases]**\n$commandInfo[ping;description]
-**botinfo - $commandInfo[botinfo;aliases]**\n$commandInfo[botinfo;description]
-}
-{color:$getServerVar[embedscolor]};{actionRow:Página Inicial,2,4,pi:Diversão,2,4,click:Música,2,4,click2:Moderação,2,4,click5};64;7]
-$let[discord;<:discord:830020052069515264>]
-`
-}, {
-name: "click5",
-type: "awaitedCommand",
-code: `
-$interactionReply[;{author:Help - Moderação:$authorAvatar:}
-{description:
-$get[mod] » Olá **$username**! Seja bem-vindo(a) a **Aba de Moderação**!\n
-**clear || $commandInfo[clear;aliases]**\n$commandInfo[clear;description]
-**ban || $commandInfo[ban;aliases]**\n$commandInfo[ban;description]
-**unban || $commandInfo[unban;aliases]**\n$commandInfo[unban;description]
-**lock || $commandInfo[lock;aliases]**\n$commandInfo[lock;description]
-**unlock || $commandInfo[unlock;aliases]**\n$commandInfo[unlock;description]
-**setprefix || $commandInfo[setprefix;aliases]**\n$commandInfo[setprefix;description]
-**setmute || $commandInfo[setmute;aliases]**\n$commandInfo[setmute;description]
-**tempmute || $commandInfo[tempmute;aliases]**\n$commandInfo[tempmute;description]
-**setleave || $commandInfo[setleave;aliases]**\n$commandInfo[setleave;description]
-**setleavemsg - || $commandInfo[setleave;aliases]**\n$commandInfo[setleavemsg;description]
-**set-wchannel || $commandInfo[set-wchannel;aliases]**\n$commandInfo[set-wchannel;description]
-**set-wmsg || $commandInfo[set-wmsg;aliases]**\n$commandInfo[set-wmsg;description]
-**welcomestatus || $commandInfo[welcomestatus;aliases]**\n$commandInfo[welcomestatus;description]
-**set-autorole || $commandInfo[set-autorole;aliases]**\n$commandInfo[set-autorole;description]
-**enable-wdm || $commandInfo[enable-wdm;aliases]**\n$commandInfo[enable-wdm;description]
-**set-wimg || $commandInfo[set-wimg;aliases]**\n$commandInfo[set-wimg;description]
-**set-wtitle || $commandInfo[set-wtitle;aliases]**\n$commandInfo[set-wtitle;description]
-}{color:$getServerVar[embedscolor]}
-;{actionRow:Página Inicial,2,4,pi:Diversão,2,4,click:Música,2,4,click2:Utilidades,2,4,click4};64;7]
-$let[mod;<:dev_1:830020861703749632>]
-`
-}, {
-name: "miscelânea",
-type: "awaitedCommand",
-code: `
-$editMessage[$message[1];
-{title:$get[teo] » Aba de Miscelânea}
-{description:$get[teo] » Olá **$username**! Seja bem-vindo(a) a **Aba de Miscelânea**!\n
-**Nenhum comando foi encontrado nessa categoria!**
-} 
-{color:F39A63}]
-$let[teo;<:Teo:896538789122539560>]
-`
-}, {
-name: "fechar",
-type: "awaitedCommand",
-code: `$deleteMessage[$message[1]]`
-}]
