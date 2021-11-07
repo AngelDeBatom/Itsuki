@@ -49,7 +49,7 @@ embedscolor: "C2E3F2",
 emojie: "<:error:907025300779589652>",
 comandos: "0",
 devs: "838166653039935538;542305880054431764",
-prefix: "s!"
+prefix: "r!"
 })
 //Welcome System
 bot.variables({
