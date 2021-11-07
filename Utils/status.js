@@ -6,7 +6,7 @@ status: "online",
 time: 12
 })
 bot.status({
-text: "📦 | Working on version 1.0.2 | [2]", 
+text: "📦 | Working on version 1.2.1 | [2]", 
 type: "STREAMING", 
 status: "online",
 time: 12
