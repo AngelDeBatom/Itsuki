@@ -58,6 +58,8 @@ welcomemsg: "Olá {user.mention}, seja bem-vindo(a) ao {guild.name}`({guild.id})
 welcomech: "",
 welcomeimg: "",
 welcometitle: "",
+welcomedm: "desativado",
+autorole: "",
 leavemsg: "{user.mention} saiu do servidor, tomará que volto um dia.",
 leavech: ""
 })
