@@ -17,7 +17,7 @@ $setVar[comandos;$sum[$getVar[comandos];1]]
  d.object.uwu = ms(d.object.botPing)
  ]
  $createObject[{"start": $dateStamp, "botPing": $botPing}]
-$globalCooldown[5s;$getServerVar[emojie] **| $username**, Wait \`$replaceText[$replaceText[$getCooldownTime[5s;globalUser;ping;$authorID]\` to use the command again!]
+$globalCooldown[5s;$getServerVar[emojie] **| $username**, Wait \`$getCooldownTime[5s;globalUser;ping;$authorID]\` to use the command again!]
 `
 
 }
