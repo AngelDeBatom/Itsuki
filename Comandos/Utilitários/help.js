@@ -12,7 +12,7 @@ $addField[🛠️ Administration;
 **clear \`|\` ban \`|\` unban \`|\` lock \`|\` unlock \`|\` tempmute**
 ]
 $addField[🔧 Configurable;
-**setprefix \`|\` setmute \`|\` tempmute \`|\` set-wchannel \`|\` set-wmsg \`|\` set-wimg \`|\` set-wtitle \`|\` set-autorole**
+**set-prefix \`|\` set-mute-role \`|\` temp-mute \`|\` set-wchannel \`|\` set-wmsg \`|\` s-lchannel \`|\` set-lmsg \`|\` set-autorole**
 ]
 $addField[🗺️ General;
 **invite \`|\` ping \`|\` botinfo \`|\` userinfo**
