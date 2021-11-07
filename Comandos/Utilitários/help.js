@@ -6,7 +6,7 @@ code: `
 <@$authorID>
 $title[Help Panel]
 $description[
-Qualquer erro encontrado seja ortográfico ou no comando em si reporte utilizando \`$getServerVar[prefix].bug <bug>\`
+ \`$getServerVar[prefix].bug <bug>\`
 ]
 $addField[🛠️ Administration;
 **clear \`|\` ban \`|\` unban \`|\` lock \`|\` unlock \`|\` tempmute**
@@ -14,7 +14,7 @@ $addField[🛠️ Administration;
 $addField[🔧 Configurable;
 **setprefix \`|\` setmute \`|\` tempmute \`|\` set-wchannel \`|\` set-wmsg \`|\` set-wimg \`|\` set-wtitle \`|\` set-autorole**
 ]
-$addField[🧠 Utilities;
+$addField[🗺️ General;
 **ping \`|\` botinfo \`|\` userinfo**
 ]
 $addField[🎶 Music;
