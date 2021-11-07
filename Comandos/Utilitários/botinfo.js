@@ -12,7 +12,7 @@ Hi **$username**, my name is Rimuru Tempest, I'm 3 years old and I'm a simple bo
 I've been living in this world since October 5, 2021 to ensure fun and moderation on your server. :D
  **Information**
 > 👑 Creator \`$userTag[$botownerid]\`
-> 📌 Prefix \`Servidor: $getServerVar[prefix] || Padrão: r_ \`
+> 📌 Prefix \`Server: $getServerVar[prefix] || Pattern: r! \`
 > 👥 Total users \`$allMembersCount\`
 > 💙 Total servers \`$serverCount\`
  **Hosting**
