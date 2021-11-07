@@ -6,22 +6,22 @@ code: `
 <@$authorID>
 $title[Painel de Ajuda]
 $description[
-Qualquer erro encontrado seja ortográfico ou no comando em si reporte utilizando \`d.bug <bug>\`
+Qualquer erro encontrado seja ortográfico ou no comando em si reporte utilizando \`$getServerVar[prefix].bug <bug>\`
 ]
 $addField[Administration;
-clear \`|\` ban \`|\` unban \`|\` lock \`|\` unlock \`|\` tempmute
+**clear \`|\` ban \`|\` unban \`|\` lock \`|\` unlock \`|\` tempmute**
 ]
 $addField[Configurable;
-setprefix \`|\` setmute \`|\` tempmute \`|\` set-wchannel \`|\` set-wmsg \`|\` set-wimg \`|\` set-wtitle \`|\` set-autorole
+**setprefix \`|\` setmute \`|\` tempmute \`|\` set-wchannel \`|\` set-wmsg \`|\` set-wimg \`|\` set-wtitle \`|\` set-autorole**
 ]
 $addField[Utilities;
-ping \`|\` botinfo \`|\` userinfo
+**ping \`|\` botinfo \`|\` userinfo**
 ]
 $addField[Music;
-play \`|\` skip \`|\` queue \`|\` loop \`|\` pause \`|\` stop \`|\` resume \`|\` disconnect
+**play \`|\` skip \`|\` queue \`|\` loop \`|\` pause \`|\` stop \`|\` resume \`|\` disconnect**
 ]
 $addField[Fun;
-hug \`|\` cafuné \`|\` conquista \`|\` happy \`|\` trump \`|\` kiss
+**hug \`|\` cafuné \`|\` conquista \`|\` happy \`|\` trump \`|\` kiss**
 ]
 $footer[Executado por: $userTag;$authorAvatar]
 $addTimestamp
