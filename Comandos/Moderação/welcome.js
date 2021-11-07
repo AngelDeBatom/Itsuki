@@ -58,7 +58,7 @@ $title[Welcome Status]
 $color[$getServerVar[embedscolor]]
 $description[
 \`\`\`
-Channel: $channelName[$getServerVar[welcomech]] || $getserverVar[welcomech]
+Channel: $getserverVar[welcomech]
 Message: $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$getServerVar[welcomemsg];{usertag};$usertag];{user.name};$username];{user.mention};<@$authorID>];{guild.name};$serverName];{guild.members};$memberCount];{guild.id};$guildid]
 Dm: $getServerVar[welcomedm]
 Auto-role: $getServerVar[autorole] 
