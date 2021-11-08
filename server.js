@@ -10,7 +10,8 @@ app.get("/", (request, response) => {
 });
 app.listen(process.env.PORT); // Recebe solicitações que o deixa online
 
-const firebaseConfig = {
+const aoifb = require('aoijs.firebase')
+const database = aoifb.create({
   apiKey: "AIzaSyBYCbiNw2OGdarD2j5g6-fY7yS9Ejf3vf0",
   authDomain: "rimuru-c9dbe.firebaseapp.com",
   projectId: "rimuru-c9dbe",
@@ -18,11 +19,7 @@ const firebaseConfig = {
   messagingSenderId: "506313583135",
   appId: "1:506313583135:web:6332002ae8816da012032a",
   measurementId: "G-KYHB2QYXYV"
-};
-
-// Initialize Firebase
-const db = initializeApp(firebaseConfig);
-const analytics = getAnalytics(db);
+})
 
 const bot = new Aoijs.Bot({
 token: process.env.token, //Discord Bot Token
@@ -33,7 +30,7 @@ shardAmount: 2,
 autoUpdate: false,
 fetchInvites: true,
 suppressAllErrors: true,
-db: rimurudb,
+db: database,
 intents: "all",
 debugs:{
 interpreter: true
