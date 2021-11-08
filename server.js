@@ -10,7 +10,6 @@ app.get("/", (request, response) => {
 });
 app.listen(process.env.PORT); // Recebe solicitações que o deixa online
 
-const firebase = require('firebase');
 const firebaseConfig = {
   apiKey: "AIzaSyBYCbiNw2OGdarD2j5g6-fY7yS9Ejf3vf0",
   authDomain: "rimuru-c9dbe.firebaseapp.com",
