@@ -55,10 +55,7 @@ prefix: "r!"
 bot.variables({
 welcomemsg: "Olá {user.mention}, seja bem-vindo(a) ao {guild.name}`({guild.id})`.",
 welcomech: "",
-welcomeimg: "https://i.pinimg.com/originals/cd/f0/9b/cdf09b00aea778cb509aafc4cccc4e77.png",
-welcometitle: "Welcome",
-welcomedm: "desativado",
-autorole: "",
+autorole: "null",
 leavemsg: "{user.mention} saiu do servidor, tomará que volto um dia.",
 leavech: ""
 })
