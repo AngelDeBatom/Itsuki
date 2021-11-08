@@ -21,8 +21,8 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const rimurudb = initializeApp(firebaseConfig);
-const analytics = getAnalytics(rimurudb);
+const db = initializeApp(firebaseConfig);
+const analytics = getAnalytics(db);
 
 const bot = new Aoijs.Bot({
 token: process.env.token, //Discord Bot Token
