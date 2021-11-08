@@ -55,7 +55,7 @@ prefix: "r!"
 bot.variables({
 welcomemsg: "Olá {user.mention}, seja bem-vindo(a) ao {guild.name}`({guild.id})`.",
 welcomech: "",
-autorole: "null",
+autorole: "No role defined",
 leavemsg: "{user.mention} saiu do servidor, tomará que volto um dia.",
 leavech: ""
 })
