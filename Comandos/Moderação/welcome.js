@@ -61,89 +61,32 @@ $description[
 \`\`\`
 Channel: $getserverVar[welcomech]
 Message: $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$getServerVar[welcomemsg];{usertag};$usertag];{user.name};$username];{user.mention};<@$authorID>];{guild.name};$serverName];{guild.members};$memberCount];{guild.id};$guildid]
-Dm: $getServerVar[welcomedm]
-Auto-role: $getServerVar[autorole] 
-Title: $getServerVar[welcometitle]
-Image:
+Auto-role: $if[$getServerVar[autorole]==]Cargo não definido$else$roleName[$getServerVar[autorole]]$endif
 \`\`\`
 ]
-$image[$getServerVar[welcomeimg]]
-$footer[Executado por: $userTag;$authorAvatar]
+$addTimestamp
 $onlyPerms[managechannels;<:errado:895110700500934667> » **$username**, você precisa da permissão \`Gerenciar Canais\` para utilizar esse comando!]
-$globalCooldown[5s;<:errado:895110700500934667> » **$username**, calma ai apressadinho espere **\`( $replaceText[$replaceText[$getCooldownTime[5s;globalUser;welcomestatus;$authorID];seconds;Segundos];second;Segundo] )\`** para executar o comando novamente!]
-`
+$globalCooldown[5s;$getServerVar[emojie] **| $username**, Wait \`$getCooldownTime[5s;globalUser;set-auto-role;$authorID]\` to use the command again!]  `
 }, {
- name: "set-autorole",
+ name: "set-auto-role",
  code: `
 <@$authorID>
-$title[Set Autorole]
- $description[<:correto:895110679495839785> » **$username**, o cargo de welcome foi definido para, <@&$mentionedRoles[1]>]
+$title[Auto Role]
+ $description[**$username**, <@&$findRole[$message[1]]> was defined as the role of welcome!
  $color[$getServerVar[embedscolor]] 
-$footer[Executado por: $userTag;$authorAvatar]
+$addTimestamp
  $setServerVar[autorole;$mentionedRoles[1]]
-$onlyPerms[managechannels;<:errado:895110700500934667> » **$username**, você precisa da permissão \`Gerenciar Canais\` para utilizar esse comando!]
-$globalCooldown[5s;<:errado:895110700500934667> » **$username**, calma ai apressadinho espere **\`( $replaceText[$replaceText[$getCooldownTime[5s;globalUser;set-autorole;$authorID];seconds;Segundos];second;Segundo] )\`** para executar o comando novamente!]
-  `
-}, {
-  name: "enable-wdm",
-  code: `
-$title[Welcome DM]
- $description[<:correto:895110679495839785> » **$username**, welcome por dm foi ativado]
- $color[$getServerVar[embedscolor]] 
-$footer[Executado por: $userTag;$authorAvatar]
-  $setServerVar[welcomedm;ativado]
-$onlyPerms[managechannels;<:errado:895110700500934667> » **$username**, você precisa da permissão \`Gerenciar Canais\` para utilizar esse comando!]
-$globalCooldown[5s;<:errado:895110700500934667> » **$username**, calma ai apressadinho espere **\`( $replaceText[$replaceText[$getCooldownTime[5s;globalUser;enable-wdm;$authorID];seconds;Segundos];second;Segundo] )\`** para executar o comando novamente!]
-
-  `
-}, {
-  name: "set-wimg",
-  code: `
-$title[Welcome Image]
- $description[<:correto:895110679495839785> » **$username**, imagem de welcome foi definido para]
- $color[$getServerVar[embedscolor]] 
-$footer[Executado por: $userTag;$authorAvatar]
-  $image[$message]
-
-  
-  $setServerVar[welcomeimg;$message]
-$onlyIf[$isValidImageLink[$message]!=false;<:errado:895110700500934667> » **$username**, forneça um url de imagem válido!]
-$onlyIf[$message!=;<:errado:895110700500934667> » **$username**, forneça o url de uma imagem!]
-$onlyPerms[managechannels;<:errado:895110700500934667> » **$username**, você precisa da permissão \`Gerenciar Canais\` para utilizar esse comando!]
-$globalCooldown[5s;<:errado:895110700500934667> » **$username**, calma ai apressadinho espere **\`( $replaceText[$replaceText[$getCooldownTime[5s;globalUser;set-wimg;$authorID];seconds;Segundos];second;Segundo] )\`** para executar o comando novamente!]
-
-  `
-}, {
-  name: "set-wtitle",
-  code: `
-$title[Welcome Title]
- $description[<:correto:895110679495839785> » **$username**, título de welcome foi definido para:\n
-\`\`\`
-$replaceText[$message;\`;]
-\`\`\`
-]
- $color[$getServerVar[embedscolor]] 
-$footer[Executado por: $userTag;$authorAvatar]
-  $setServerVar[welcometitle;$message]
-  $onlyPerms[managechannels;<:errado:895110700500934667> » **$username**, você precisa da permissão \`Gerenciar Canais\` para utilizar esse comando!]
-$globalCooldown[5s;<:errado:895110700500934667> » **$username**, calma ai apressadinho espere **\`( $replaceText[$replaceText[$getCooldownTime[5s;globalUser;set-wtitle;$authorID];seconds;Segundos];second;Segundo] )\`** para executar o comando novamente!]
-
-`
+$onlyIf[$roleExists[$findRole[$message[1]]]==true;$getServerVar[emojie] **| $username**, this role does not exist!]
+$onlyIf[$message[1]!=;$getServerVar[emojie] **| $username**, Incorrect usage mode try \`$getServerVar[prefix]set-auto-role <role | roleID>\`]
+$onlyPerms[manageroles;$getServerVar[emojie] **| $username**, Missing \`Manage Roles\` permission!]
+$onlyBotPerms[manageroles;$getServerVar[emojie] **| $username**, I nedd \`Manage Roles\` permission!]
+$globalCooldown[5s;$getServerVar[emojie] **| $username**, Wait \`$getCooldownTime[5s;globalUser;set-auto-role;$authorID]\` to use the command again!]  `
 }, {
 type: "joinCommand",
 channel: "$getServerVar[welcomech]",
 code: `
-  $if[$getServerVar[welcomech]!=]
-  $title[$getServerVar[welcometitle]]
-  $description[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$getServerVar[welcomemsg];{usertag};$usertag];{user.name};$username];{user.mention};<@$authorID>];{guild.name};$serverName];{guild.members};$memberCount];{guild.id};$guildid]]
-  $image[$getServerVar[welcomeimg]]
-  $color[RANDOM]
-  $endif
+  $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$getServerVar[welcomemsg];{usertag};$usertag];{user.name};$username];{user.mention};<@$authorID>];{guild.name};$serverName];{guild.members};$memberCount];{guild.id};$guildid]
 
-  $if[$getServerVar[welcomedm]!=ativado]
-  $dm[$authorID]
-  $endif
-  
   $if[$getServerVar[autorole]!=]
   $giveRoles[$authorID;$getServerVar[autorole]]
   $endif
