@@ -8,7 +8,7 @@ $description[
 ]
 $addField[Output;
 \`\`\`js
-$if[$eval[$message]==$message]No results$else$eval[$message]$endif
+$if[$message==$message]No results$else$eval[$message]$endif
 \`\`\`
 ]
 $addField[Input;
