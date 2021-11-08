@@ -16,7 +16,7 @@ $addField[Input;
 $message
 \`\`\`
 ]
-$eval[$message]
+$onlyIf[$message!=;]
 $onlyForIDs[$botownerid;]
 `
 }
