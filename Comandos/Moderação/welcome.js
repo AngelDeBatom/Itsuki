@@ -8,7 +8,7 @@ $title[Welcome Channel]
 $color[$getServerVar[embedscolor]]
 $addTimestamp
 $description[**$username**, <#$findChannel[$message[1]]> has been set as welcome channel]
-$onlyIf[$channelExists[$findChannel[$message[1]]]!=true;$getServerVar[emojie] **| $username**, this channel does not exist!]
+$onlyIf[$channelExists[$findChannel[$message[1]]]!=false;$getServerVar[emojie] **| $username**, this channel does not exist!]
 $onlyIf[$mentionedChannels[1]!=;$getServerVar[emojie] **| $username**, Incorrect usage mode try \`$getServerVar[prefix]set-wchannel <channel | channelID>\`]
 $onlyPerms[managechannels;$getServerVar[emojie] **| $username**, Missing \`Manage Channels\` permission!]
 $globalCooldown[5s;$getServerVar[emojie] **| $username**, Wait \`$getCooldownTime[5s;globalUser;set-wchannel;$authorID]\` to use the command again!]
