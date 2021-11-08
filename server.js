@@ -53,11 +53,11 @@ prefix: "r!"
 })
 //Welcome System
 bot.variables({
-welcomemsg: "Olá {user.mention}, seja bem-vindo(a) ao {guild.name}`({guild.id})`.",
-welcomech: "",
+welcomemsg: "Olá {user.mention}, welcome to {guild.name}`({guild.id})`.",
+welcomech: "Defined channel",
 autorole: "No role defined",
-leavemsg: "{user.mention} saiu do servidor, tomará que volto um dia.",
-leavech: ""
+leavemsg: "{user.name} left the server, I hope it comes back some day.",
+leavech: "Defined channel"
 })
 
 
