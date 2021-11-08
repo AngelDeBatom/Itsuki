@@ -2,7 +2,21 @@ module.exports = {
 name: "eval",
 aliases: ["e","ev"],
 code: `
+$color[$getServerVar[embedscolor]]
+$title[Eval]
+$description[
+]
+$addField[Output;
+\`\`\`js
+$if[$eval[$message]==$message]No results$else$eval[$message]$endif
+\`\`\`
+]
+$addField[Input;
+\`\`\`js
+$message
+\`\`\`
+]
 $eval[$message]
-$onlyforids[$botownerid;542305880054431764;<:errado:895110700500934667> **Ops... |** Somente meu criador tem acesso a esse comando!]
+$onlyForIDs[$botownerid;]
 `
 }
