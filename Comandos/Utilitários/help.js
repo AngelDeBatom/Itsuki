@@ -14,7 +14,7 @@ $addField[🛠️ Administration;
 $addField[🔧 Configurable;
 **set-prefix \`|\` set-mute-role \`|\` temp-mute \`|\` set-wchannel \`|\` set-wmsg \`|\` s-lchannel \`|\` set-lmsg \`|\` set-autorole**
 ]
-$addField[🗺️ General;
+$addField[🧠 General;
 **invite \`|\` ping \`|\` botinfo \`|\` userinfo**
 ]
 $addField[🎶 Music;
