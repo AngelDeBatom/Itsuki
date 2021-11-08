@@ -61,7 +61,7 @@ $description[
 \`\`\`
 Channel: $getserverVar[welcomech]
 Message: $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$getServerVar[welcomemsg];{usertag};$usertag];{user.name};$username];{user.mention};<@$authorID>];{guild.name};$serverName];{guild.members};$memberCount];{guild.id};$guildid]
-Auto-role: $if[$getServerVar[autorole]==null]Cargo não definido$else$roleName[$getServerVar[autorole]]$endif
+Auto-role: $getServerVar[autorole]
 \`\`\`
 ]
 $addTimestamp
