@@ -59,6 +59,7 @@ prefix: "r!",
 botlanguage: "🇬🇧 English",
 emojie: "<:incorrect:909966535769092156>",
 emojic: "",
+embedscolor: "#000000",
 })
 
 
