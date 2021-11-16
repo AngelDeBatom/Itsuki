@@ -59,7 +59,7 @@ prefix: "d.",
 setlanguague: `$getServerVar[emojie] <@$authorID>, say the language I'm going to say "pt" for portuguese and "en" for english.`,
 botlanguague: "🇬🇧 English",
 emojie: "<:incorrect:909966535769092156>",
-emojic: "",
+emojic: "<:correct:910318012945559594>",
 embedscolor: "#2F3136",
 })
 
