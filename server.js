@@ -55,6 +55,7 @@ bot.onJoined();
 bot.onLeave();
 
 bot.variables({
+prefix: "r!",
 botlanguage: "🇬🇧 English",
 })
 
