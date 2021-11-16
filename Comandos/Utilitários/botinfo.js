@@ -15,6 +15,7 @@ I've been living in this world since October 5, 2021 to ensure fun and moderatio
 > 📌 Prefix \`Server: $getServerVar[prefix] || Pattern: r! \`
 > 👥 Total users \`$allMembersCount\`
 > 💙 Total servers \`$serverCount\`
+> 🌍 Language \`$getServerVar[botlanguage]\`
  **Hosting**
 > ☁️ Database \`FireBase \`
 > ⚡ Host \`Heroku\`
