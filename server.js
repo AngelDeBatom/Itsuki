@@ -55,21 +55,7 @@ bot.onJoined();
 bot.onLeave();
 
 bot.variables({
-muted: "",
-embedscolor: "C2E3F2",
-emojie: "<:error:907025300779589652>",
-comandos: "0",
-devs: "838166653039935538;542305880054431764",
-prefix: "r!"
+botlanguage: "🇬🇧 English",
 })
-//Welcome System
-bot.variables({
-welcomemsg: "Olá {user.mention}, welcome to {guild.name}`({guild.id})`.",
-welcomech: "Defined channel",
-autorole: "No role defined",
-leavemsg: "{user.name} left the server, I hope it comes back some day.",
-leavech: "Defined channel"
-})
-
 
 
