@@ -9,8 +9,8 @@ $setServerVar[botlanguague;🇧🇷 Português de Brasil]
 $getServerVar[emojic] <@$authorID>, agora eu falo português.
 $endelseif
 $elseif[$message==en]
-$resetServerVar[setlanguague;$guildID]
-$resetServerVar[botlanguague;$guildID]
+$resetServerVar[setlanguague]
+$resetServerVar[botlanguague]
 $getServerVar[emojic] <@$authorID>, now i speak english.
 $endelseif
 $endif
