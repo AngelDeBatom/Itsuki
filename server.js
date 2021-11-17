@@ -56,8 +56,8 @@ bot.onLeave();
 
 bot.variables({
 prefix: "d.",
-setlanguague: `$getServerVar[emojie] <@$authorID>, say the language I'm going to say "pt" for portuguese and "en" for english.`,
-botlanguague: "🇬🇧 English",
+setlanguage: `$getServerVar[emojie] <@$authorID>, say the language I'm going to say "pt" for portuguese and "en" for english.`,
+botlanguage: "🇬🇧 English",
 emojie: "<:incorrect:909966535769092156>",
 emojic: "<:correct:910318012945559594>",
 embedscolor: "#2F3136",
