@@ -11,7 +11,7 @@ $onlyIf[$voiceID!=;<:errado:895110700500934667> » **$username**, você não est
 $else
 <:youtube:910340836804411433> Tocando agora
 $playSong[$noMentionMessage;5m;yes;yes;<:errado:895110700500934667> » **$username**, não foi possível encontrar a música!]\`
-
+$endif
 `
 }, {
 type: "musicEndCommand",
