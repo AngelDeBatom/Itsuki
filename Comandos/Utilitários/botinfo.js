@@ -20,8 +20,8 @@ $getServerVar[botinfohowdy] **$username**, $getServerVar[botinfoblabla].
 > 🛰️ $getServerVar[botinfoping] \`$pingms\`
 > 📆 $getServerVar[botinfocreationdate] \`$getServerVar[botinfocreationdatea]\`
 }
-;{actionRow:Invite me,2,5,https\\://discord.com/api/oauth2/authorize?client_id=895106609406160978&permissions=8&scope=bot:Support,2,5,https\\://discord.gg/3WTCz2vpBs};;no]
+;{actionRow:$getServerVar[botinfoinviteme],2,5,https\\://discord.com/api/oauth2/authorize?client_id=895106609406160978&permissions=8&scope=bot:$getServerVar[botinfosupport],2,5,https\\://discord.gg/3WTCz2vpBs};;no]
 
-$globalCooldown[5s;$getServerVar[emojie] **| $username**, Wait \`$getCooldownTime[5s;globalUser;botinfo;$authorID]\` to use the command again!]
+$globalCooldown[5s;$getServerVar[emojie] <@$authorID>, $getServerVar[cooldownmsg]]
 `
 }
