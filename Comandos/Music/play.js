@@ -3,10 +3,15 @@ name: "play",
 aliases: ["p"],
 description: "Tocar uma música",
 code: `
-**\`( $playSong[$noMentionMessage;5m;yes;yes;<:errado:895110700500934667> » **$username**, não foi possível encontrar a música!] )\`** foi adicionado a queue!
+$if[$queueLength==0]
+\`$playSong[$noMentionMessage;5m;yes;yes;<:errado:895110700500934667> » **$username**, não foi possível encontrar a música!]\` foi adicionado a queue!
 $suppressErrors[<:errado:895110700500934667> » **$username**, algo deu errado ao tentar executar o comando!]
 $onlyIf[$message!=;<:errado:895110700500934667> » **$username**, eu preciso do nome da música para encontrar um som!]
 $onlyIf[$voiceID!=;<:errado:895110700500934667> » **$username**, você não está em um canal de voz, entre em um!]
+$else
+<:youtube:910340836804411433> Tocando agora
+$playSong[$noMentionMessage;5m;yes;yes;<:errado:895110700500934667> » **$username**, não foi possível encontrar a música!]\`
+
 `
 }, {
 type: "musicEndCommand",
