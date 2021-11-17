@@ -72,7 +72,10 @@ botinfolanguage: "Language",
 botinfostatistics: "Statistics",
 botinfouptime: "Uptime",
 botinfoping: "Ping",
-bitinfocreationdate: "Creation Date",
+botinfocreationdate: "Creation Date",
+botinfocreationdatea: "October 5, 2021 (5/10/2021)",
+botinfohowdy "Howdy",
+botinfoblabla: "here is some information about me",
 
 })
 
