@@ -55,6 +55,7 @@ bot.onJoined();
 bot.onLeave();
 
 bot.variables({
+cooldownmsg: "wait **5s** to use the command again!",
 prefix: "d.",
 setlanguage: `say the language I'm going to say "pt" for portuguese and "en" for english.`,
 botlanguage: "🇬🇧 English",
