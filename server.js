@@ -61,6 +61,19 @@ botlanguage: "🇬🇧 English",
 emojie: "<:incorrect:909966535769092156>",
 emojic: "<:correct:910318012945559594>",
 embedscolor: "#2F3136",
+botinfoinformation: "Information",
+botinfocreator: "Creator",
+botinfoprefix: "Prefix",
+botinfoprefixa: "Guild:",
+botinfoprefixb: "Pattern:",
+botinfousers: "Total users",
+botinfoguilds: "Total guilds",
+botinfolanguage: "Language",
+botinfostatistics: "Statistics",
+botinfouptime: "Uptime",
+botinfoping: "Ping",
+bitinfocreationdate: "Creation Date",
+
 })
 
 
