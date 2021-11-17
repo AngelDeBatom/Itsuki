@@ -14,8 +14,5 @@ $resetServerVar[botlanguage]
 $getServerVar[emojic] <@$authorID>, now i speak english.
 $endelseif
 $endif
-
-
-]
 `
 }
