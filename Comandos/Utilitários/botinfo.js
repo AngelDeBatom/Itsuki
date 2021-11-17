@@ -7,9 +7,8 @@ $apiMessage[$channelID;<@$authorID>;
 {author:Bot Info:$authorAvatar:}
 {color:$getServerVar[embedscolor]}
 {description:
-Hi **$username**, my name is Rimuru Tempest, I'm 3 years old and I'm a simple bot created in order to have fun and moderate your server.
+$getServerVar[botinfohowdy] **$username**, $getServerVar[botinfoblabla].
 
-I've been living in this world since October 5, 2021 to ensure fun and moderation on your server. :D
  **$getServerVar[botinfoinformation]**
 > 👑 $getServerVar[botinfocreator] \`$userTag[$botownerid]\`
 > 📌 $getServerVar[botinfoprefix] \`$getServerVar[botinfoprefixa] $getServerVar[prefix] || $getServerVar[botinfoprefixb] d. \`
