@@ -1,5 +1,5 @@
 module.exports = {
-name: "language"
+name: "language",
 code: `
 $if[$message==]
 $getServerVar[setlanguage]
