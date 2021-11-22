@@ -79,7 +79,8 @@ botinfohowdy: "Howdy",
 botinfoblabla: "here is some information about me",
 botinfoinviteme: "Invite me",
 botinfosupport: "Support",
-
+afk: "false",
+afkreason: "null"
 })
 
 
