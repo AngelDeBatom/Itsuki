@@ -3,18 +3,15 @@ name: "help",
 aliases: ["commands"],
 description: "Informações sobre os comandos!",
 code: `
-<@$authorID>
-$title[Help Panel]
-$description[
-]
-$addField[🧠 General;
+$reply[$messageID;{title:Painel de Ajuda}
+{description:
+**🧠 General**
 **invite \`|\` ping \`|\` botinfo \`|\`afk**
-]
-$addField[🎶 Music;
+**🎶 Music**
 **play \`|\` skip \`|\` queue \`|\` loop \`|\` pause \`|\` stop \`|\` resume \`|\` disconnect**
-]
-$footer[Servidor hospedado no fragmento #$shardID]
-$addTimestamp
-$color[FFFFFF]
+}
+{footer:Servidor hospedado no fragmento #$shardID}
+{timestamp:ms}
+{color:FFFFFF}
 `
 }
