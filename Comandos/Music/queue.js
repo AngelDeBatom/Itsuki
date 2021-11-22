@@ -5,10 +5,10 @@ description: "Ver a lista de música que está tocando!",
 code: `
 $reply[$messageID;
 \`\`\`
-$queue
+$replaceText[$replaceText[replaceText[$queue[1;30];<;$username[];>;]];@;]
 \`\`\`
 ;yes]
-$onlyIf[$voiceID!=$clientID;<:errado:895110700500934667> » **$username**, você precisa estar no mesmo canal de voz que o bot!]	
-$onlyIf[$queueLength!=0;<:errado:895110700500934667> » **$username**, não possui nenhuma música na queue!]
+$onlyIf[$voiceID!=$clientID;<:incorrect:909966535769092156> <@$authorID>, você precisa estar no mesmo canal de voz que o bot!]	
+$onlyIf[$queueLength!=0;<:incorrect:909966535769092156> <@$authorID>, não possui nenhuma música na queue!]
 `
 }
