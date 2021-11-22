@@ -13,6 +13,7 @@ $reply[$messageID;😴 <@$authorID>, o usuário está afk, motivo: $getGlobalUse
 $onlyIf[$mentioned[1]!=;]
 $onlyIf[$getGlobalUserVar[afk;$mentioned[1]]==true;]
 $onlyIf[$isBot[$authorID]==false;]
+$suppressErrors
 
 `
 }, {
@@ -24,5 +25,6 @@ $deleteIn[5s]
 $onlyIf[$getGlobalUserVar[afk;$authorID]==true;]
 $onlyif[$checkcontains[$message;$getservervar[prefix]afk]==false;]
 $onlyIf[$isBot[$authorID]==false;]
+$suppressErrors
 `
 }]
