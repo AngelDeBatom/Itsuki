@@ -5,23 +5,20 @@ code: `
 
 $apiMessage[$channelID;<@$authorID>;
 {author:Bot Info:$authorAvatar:}
-{color:$getServerVar[embedscolor]}
+{color:FFFFFF}
 {description:
-$getServerVar[botinfohowdy] **$username**, $getServerVar[botinfoblabla].
+Olá **$username**, aqui estão algumas informações sobre mim.
 
- **$getServerVar[botinfoinformation]**
-> 👑 $getServerVar[botinfocreator] \`$userTag[$botownerid]\`
-> 📌 $getServerVar[botinfoprefix] \`$getServerVar[botinfoprefixa] $getServerVar[prefix] || $getServerVar[botinfoprefixb] d. \`
-> 👥 $getServerVar[botinfousers]\`$allMembersCount\`
-> 💙 $getServerVar[botinfoguilds] \`$serverCount\`
-> 🌍 $getServerVar[botinfolanguage] \`$getServerVar[botlanguage]\`
- **$getServerVar[botinfostatistics]**
-> ⏰ $getServerVar[botinfouptime] \`$uptime\`
-> 🛰️ $getServerVar[botinfoping] \`$pingms\`
-> 📆 $getServerVar[botinfocreationdate] \`$getServerVar[botinfocreationdatea]\`
+ **Informações**
+> 👑 Criador \`$userTag[$botownerid]\`
+> 📌 Prefixo \`$getServerVar[botinfoprefixa] $getServerVar[prefix] || $getServerVar[botinfoprefixb] d. \`
+> 👥 Usuários \`$allMembersCount\`
+> 💙 Guildas \`$serverCount\`
+ **Estatísticas**
+> ⏰ Uptime \`$uptime\`
+> 🛰️ Ping \`$pingms\`
+> 📆 Data de criação \`5 de outubro de 2021 (5.10.2021)\`
 }
-;{actionRow:$getServerVar[botinfoinviteme],2,5,https\\://discord.com/api/oauth2/authorize?client_id=895106609406160978&permissions=8&scope=bot:$getServerVar[botinfosupport],2,5,https\\://discord.gg/3WTCz2vpBs};;no]
-
-$globalCooldown[5s;$getServerVar[emojie] <@$authorID>, $getServerVar[cooldownmsg]]
+;{actionRow:Convide-me,2,5,https\\://discord.com/api/oauth2/authorize?client_id=895106609406160978&permissions=8&scope=bot:Suporte,2,5,https\\://discord.gg/};;no]
 `
 }
