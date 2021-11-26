@@ -7,7 +7,7 @@ code: `
 $description[\`\`\`
 Tocando agora: $songInfo[title]
 
-$queue[1;30;**{number}.** {title} por {username}]
+$queue[1;30;{number}. {title} por {username}]
 \`\`\`
 ]
 $onlyIf[$voiceID!=$clientID;<:incorrect:909966535769092156> <@$authorID>, você precisa estar no mesmo canal de voz que o bot!]	
