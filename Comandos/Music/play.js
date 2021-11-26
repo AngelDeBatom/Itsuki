@@ -3,7 +3,9 @@ name: "play",
 aliases: ["p"],
 description: "Tocar uma música",
 code: `
-
+<@$authorID>
+$thumbnail[$songInfo[thumbnail]]
+$description[
 **$playSong[$noMentionMessage;2s;yes;yes;<:incorrect:909966535769092156> <@$authorID>, não foi possível encontrar a música.]** foi adicionado a queue!
 $suppressErrors[<:incorrect:909966535769092156> <@$authorID>, algo deu errado ao tentar executar o comando.]
 $onlyIf[$message!=;<:incorrect:909966535769092156> <@$authorID>, é preciso do nome da música para encontrar o som!]
