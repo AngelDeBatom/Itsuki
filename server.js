@@ -27,7 +27,7 @@ prefix: "$getServerVar[prefix]", //Discord Bot Prefix
 mobile: false,
 sharding: true,
 shardAmount: 2,
-autoUpdate: false,
+autoUpdate: true,
 fetchInvites: true,
 suppressAllErrors: true,
 db: database,
@@ -56,7 +56,7 @@ bot.onLeave();
 
 bot.variables({
 cooldownmsg: "wait **5s** to use the command again!",
-prefix: "i,",
+prefix: ".",
 setlanguage: `say the language I'm going to say "pt" for portuguese and "en" for english.`,
 botlanguage: "🇬🇧 English",
 emojie: "<:incorrect:909966535769092156>",
