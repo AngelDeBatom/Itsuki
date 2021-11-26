@@ -1,5 +1,4 @@
-
-const Aoijs = require('aoi.js');
+const aoijs = require('aoi.js');
 const express = require('express');
 const app = express();
 app.get("/", (request, response) => {
@@ -21,7 +20,7 @@ const database = aoifb.create({
   measurementId: "G-KYHB2QYXYV"
 })
 
-const bot = new Aoijs.Bot({
+const bot = new aoijs.Bot({
 token: process.env.token, //Discord Bot Token
 prefix: "$getServerVar[prefix]", //Discord Bot Prefix
 mobile: false,
@@ -42,7 +41,8 @@ require('./Utils/status.js')(bot);
 require('./Utils/callbacks.js')(bot);
 
 //Requerindo a pasta de comandos
-bot.loadCommands("./Comandos/")
+const loader = new aoijs.LoadCommands(bot)
+ loader.load(bot.cmd,"./Comandos/")
 
 //Ativando as respostas do bot
 bot.onMessage({
