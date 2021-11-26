@@ -4,7 +4,7 @@ aliases: ["q"],
 description: "Ver a lista de música que está tocando!",
 code: `
 $reply[$messageID;
-**Tocando agora:** [$songInfo[title]]($songInfo[url]) próximo som **$songInfo[title;l]**
+**Tocando agora:** [$songInfo[title]]($songInfo[url])
 \`\`\`
 $queue[1;30;**{number}.** {title} por {username}]
 \`\`\`
