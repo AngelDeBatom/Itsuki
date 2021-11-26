@@ -26,7 +26,7 @@ prefix: "$getServerVar[prefix]", //Discord Bot Prefix
 mobile: false,
 sharding: true,
 shardAmount: 2,
-autoUpdate: true,
+autoUpdate: false,
 fetchInvites: true,
 suppressAllErrors: true,
 db: database,
@@ -41,8 +41,7 @@ require('./Utils/status.js')(bot);
 require('./Utils/callbacks.js')(bot);
 
 //Requerindo a pasta de comandos
-const loader = new aoijs.LoadCommands(bot)
- loader.load(bot.cmd,"./Comandos/")
+bot.loadCommands("./Comandos/")
 
 //Ativando as respostas do bot
 bot.onMessage({
