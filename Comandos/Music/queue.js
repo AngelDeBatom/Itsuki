@@ -4,8 +4,9 @@ aliases: ["q"],
 description: "Ver a lista de música que está tocando!",
 code: `
 <@$authorID>
-$title[**Tocando agora:** [$songInfo[title]]($songInfo[url])]
 $description[\`\`\`
+Tocando agora: $songInfo[title]
+
 $queue[1;30;**{number}.** {title} por {username}]
 \`\`\`
 ]
