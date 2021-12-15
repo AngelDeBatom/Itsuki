@@ -8,7 +8,7 @@ $reply[$messageID;{title:Painel de Ajuda}
 **🧠 General**
 **invite \`|\` ping \`|\` botinfo \`|\`afk**
 **🎶 Music**
-**play \`|\` skip \`|\` queue \`|\` loop \`|\` pause \`|\` stop \`|\` resume \`|\` disconnect**
+**play \`|\` skip \`|\` queue \`|\` loop \`|\` pause \`|\` stop \`|\` resume \`|\` disconnect `\|\` join**
 }
 {footer:Servidor hospedado no fragmento #$shardID}
 {timestamp:ms}
