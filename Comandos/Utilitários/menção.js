@@ -1,8 +1,8 @@
 module.exports = {
-name: "<@895106609406160978>",
-aliases: ["<@!895106609406160978>"],
+name: "<@920436865675436052>",
+aliases: ["<@!920436865675436052>"],
 nonPrefixed: true,
 code: `
-Olá <@$authorID>, meu nome é **Itsuki**. Obtenha ajuda usando **$getServerVar[prefix]help**, a propósito, meu prefixo neste servidor é **$getServerVar[prefix]**.
+Olá <@$authorID>, meu prefixo neste servidor é: **$getServerVar[prefix]**, obtenha ajuda utilizando **$getServerVar[prefix]help**.
 `
 }
