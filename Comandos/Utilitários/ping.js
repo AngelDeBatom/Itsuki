@@ -2,12 +2,10 @@ module.exports = {
   name: "ping",
   description: "Saber a latência do bot!",
   code: `
-
-$setVar[comandos;$sum[$getVar[comandos];1]]
 <@$authorID>
 ⚡ Shard ID \`#$shardID\`
-📡 API Latency \`$pingms\`
-🤖 BOT Latency \`$botPingms\`
+📡 API Latency \`$pingws\`
+🤖 BOT Latency \`$botPingws\`
 
  $djsEval[
  let a = Date.now()
@@ -17,7 +15,6 @@ $setVar[comandos;$sum[$getVar[comandos];1]]
  d.object.uwu = ms(d.object.botPing)
  ]
  $createObject[{"start": $dateStamp, "botPing": $botPing}]
-$globalCooldown[5s;$getServerVar[emojie] **| $username**, Wait \`$getCooldownTime[5s;globalUser;ping;$authorID]\` to use the command again!]
 `
 
 }
