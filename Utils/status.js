@@ -1,12 +1,12 @@
 module.exports = (bot) => {
 bot.status({
-text: ".help [Cluster 1]",
+text: "$getServerVar[prefix]help ・ dsc.gg/dix ・ $botPingws",
 type: "LISTENING",
 status: "online",
 time: 12
 })
 bot.status({
-text: ".help [Cluster 2]",
+text: "$getServerVar[prefix]help ・ dsc.gg/dix ・ $botPingws",
 type: "LISTENING",
 status: "online",
 time: 12
