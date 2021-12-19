@@ -3,9 +3,7 @@ name: "gerar",
 code: `
 $if[$message==nitro]
 https://discord.gift/$randomString[16]
-https://discord.gift/$randomString[16]
 $elseif[$message==Nitro]
-https://discord.gift/$randomString[16]
 https://discord.gift/$randomString[16]
 $endelseif
 $endif
