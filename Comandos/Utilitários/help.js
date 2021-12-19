@@ -11,7 +11,7 @@ $description[
 **🎶 Music**
 **play \`|\` skip \`|\` queue \`|\` loop \`|\` pause \`|\` stop \`|\` resume \`|\` disconnect `\|\` join**
 ]
-$footer[Servidor hospedado no fragmento #$replaceText[$shardID;0;0 \`(Cyborg\`)]]
+$footer[Servidor hospedado no fragmento #$shardID]
 $addtimestamp
 $color[FFFFFF]
 `
