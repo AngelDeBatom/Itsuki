@@ -54,30 +54,8 @@ bot.onJoined();
 bot.onLeave();
 
 bot.variables({
-cooldownmsg: "wait **5s** to use the command again!",
-prefix: "d.",
-setlanguage: `say the language I'm going to say "pt" for portuguese and "en" for english.`,
-botlanguage: "🇬🇧 English",
-emojie: "<:incorrect:909966535769092156>",
-emojic: "<:correct:910318012945559594>",
-embedscolor: "#2F3136",
-botinfoinformation: "Information",
-botinfocreator: "Creator",
-botinfoprefix: "Prefix",
-botinfoprefixa: "Guild:",
-botinfoprefixb: "Pattern:",
-botinfousers: "Total users",
-botinfoguilds: "Total guilds",
-botinfolanguage: "Language",
-botinfostatistics: "Statistics",
-botinfouptime: "Uptime",
-botinfoping: "Ping",
-botinfocreationdate: "Creation Date",
-botinfocreationdatea: "October 5, 2021 (5/10/2021)",
-botinfohowdy: "Howdy",
-botinfoblabla: "here is some information about me",
-botinfoinviteme: "Invite me",
-botinfosupport: "Support",
+prefix: "!",
+afktime: "",
 afk: "false",
 afkreason: "null"
 })
