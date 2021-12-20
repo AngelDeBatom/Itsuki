@@ -7,7 +7,6 @@ module.exports = {
 $onlyIf[$message[2]!=;<:incorrect:909966535769092156> <@$authorID>, tente usar: **$getServerVar[prefix]addemoji <emoji | emojiID> <name>**]
 $onlyPerms[manageemojis;<:incorrect:909966535769092156> <@$authorID>, permissão em falta: **Gerenciar Emojis**]
 $onlyBotPerms[manageemojis;<:incorrect:909966535769092156> <@$authorID>, estou com permissão em falta: **Gerenciar Emojis**.]
-$onlyForChannels[$getServerVar[onlyforchannel];<@$authorID>, esse canal foi proíbido de se executar meus comandos, tente no canal <#$getServerVar[onlyforchannel]>.]
 $suppressErrors
 `
 }
