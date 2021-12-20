@@ -55,6 +55,7 @@ bot.onLeave();
 
 bot.variables({
 prefix: "!",
+onlyforchannel: "$channelID"
 afktime: "",
 afk: "false",
 afkreason: "null"
