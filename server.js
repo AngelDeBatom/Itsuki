@@ -54,7 +54,7 @@ bot.onJoined();
 bot.onLeave();
 
 bot.variables({
-prefix: "d.",
+prefix: "D!",
 onlyforchannel: "$channelID",
 afktime: "",
 afk: "false",
