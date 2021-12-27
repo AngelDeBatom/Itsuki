@@ -1,6 +1,6 @@
 module.exports = [{
 name: "tocar",
-aliases: ["p"],
+aliases: ["p","play"],
 description: "Tocar uma música",
 code: `
 $suppressErrors[<:incorrect:909966535769092156> <@$authorID>, algo deu errado ao tentar executar o comando.]
