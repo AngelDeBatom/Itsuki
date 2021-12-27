@@ -1,5 +1,5 @@
 module.exports = [{
-name: "play",
+name: "tocar",
 aliases: ["p"],
 description: "Tocar uma música",
 code: `
