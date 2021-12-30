@@ -7,6 +7,7 @@ $setServerVar[extrovertido;ligado]
 $elseif[$getServerVar[extrovertido]==ligado]
 $setServerVar[extrovertido;desligado]
 <a:sim:926052904593412106> <@$authorID>, modo extrovertido **desligado**. 😝
+$endelseif
 $endif
 
 `
