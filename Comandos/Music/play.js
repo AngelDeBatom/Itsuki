@@ -3,7 +3,6 @@ name: "tocar",
 aliases: ["p"],
 description: "Tocar uma música",
 code: `
-$suppressErrors[<:incorrect:909966535769092156> <@$authorID>, algo deu errado ao tentar executar o comando.]
 <@$authorID>
 $thumbnail[$songInfo[thumbnail]]
 $description[
