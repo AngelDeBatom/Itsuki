@@ -10,7 +10,7 @@ Tocando agora: $songInfo[title]
 ]
 $addField[Lista;
 \`\`\`
-$if[$queue[1;15]==]...$else$queue[1;15]$endif
+$if[$queueLength!=0]...$else$queue[1;15]$endif
 \`\`\`
 ]
 $color[$getServerVar[embedcolor]]
