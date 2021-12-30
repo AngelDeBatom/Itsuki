@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = [{
 name: "modo-extrovertido",
 code: `
 $if[$getServerVar[extrovertido]==desligado]
@@ -18,4 +18,4 @@ asdawdsa
 $onlyIf[$checkMessageContains[$message;Pterodactyl;<@924263981554749461>;<@!924263981554749461>;Pterodáctilo]!=true;b]
 $onlyIf[$getServerVar[extrovertido]!=ligado;a]
 ` 
-}
+}]
