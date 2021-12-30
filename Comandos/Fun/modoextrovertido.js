@@ -15,7 +15,7 @@ $endif
 name: "$awalysExecute",
 code: `
 asdawdsa
-$onlyIf[$checkMessageContains[$message;Pterodactyl;<@924263981554749461>;<@!924263981554749461>;Pterodáctilo]!=true;b]
+$onlyIf[$checkContains[$message;Pterodactyl;<@924263981554749461>;<@!924263981554749461>;Pterodáctilo]!=true;b]
 $onlyIf[$getServerVar[extrovertido]!=ligado;a]
 ` 
 }]
