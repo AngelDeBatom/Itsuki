@@ -58,7 +58,8 @@ prefix: "!p ",
 onlyforchannel: "$channelID",
 afktime: "",
 afk: "false",
-afkreason: "null"
+afkreason: "null",
+embedcolor: "BD6E35"
 })
 
 
