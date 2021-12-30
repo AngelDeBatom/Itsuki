@@ -7,9 +7,9 @@ $suppressErrors[<:incorrect:909966535769092156> <@$authorID>, algo deu errado ao
 <@$authorID>
 $thumbnail[$songInfo[thumbnail]]
 $description[
-**$playSong[$noMentionMessage;3m;yes;yes;<:incorrect:909966535769092156> <@$authorID>, não foi possível encontrar a música.]** foi adicionado a queue!
-$onlyIf[$message!=;<:incorrect:909966535769092156> <@$authorID>, é preciso do nome da música para encontrar o som!]
-$onlyIf[$voiceID!=;<:incorrect:909966535769092156> <@$authorID>, você não está em um canal de voz, entre em um!]
+**$playSong[$noMentionMessage;3m;yes;yes;<:incorrect:909966535769092156> <@$authorID>, não foi possível encontrar a música.]** foi adicionado a fila!
+$onlyIf[$message!=;<a:nao:926052919483179008> <@$authorID>, é preciso do nome da música para encontrar o som!]
+$onlyIf[$voiceID!=;<a:nao:926052919483179008> <@$authorID>, você não está em um canal de voz, entre em um!]
 `
 }, {
 type: "musicEndCommand",
