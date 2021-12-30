@@ -5,13 +5,13 @@ code: `
 <@$authorID>
 $title[Painel de Ajuda]
 $description[
-**🧠 General**
+**🧠 Utilitários**
 **invite \`|\` ping \`|\` botinfo \`|\`afk**
-**🎶 Music**
-**play \`|\` skip \`|\` queue \`|\` loop \`|\` pause \`|\` stop \`|\` resume \`|\` disconnect \`|\` join**
+**🎶 Música**
+**tocar \`|\` skip \`|\` queue \`|\` loop \`|\` pause \`|\` stop \`|\` resume \`|\` disconnect \`|\` join**
 ]
 $footer[Servidor hospedado no fragmento #$shardID]
 $addtimestamp
-$color[FFFFFF]
+$color[$getServerVar[embedcolor]]
 `
 }
