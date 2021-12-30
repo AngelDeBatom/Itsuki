@@ -8,19 +8,15 @@ $description[\`\`\`
 Tocando agora: $songInfo[title]
 \`\`\`
 ]
-$addField[Queue 1-30;
+$addField[Lista;
 \`\`\`
-$queue[1;30;{number}. {title} por {username}]
+$if[$queue[1;15]==]...$else$queue[1;15]$endif
 \`\`\`
-;yes]
-$addField[Queue 30-60;
-\`\`\`
-...
-\`\`\`
-;yes]
+]
+$color[$getServerVar[embedcolor]]
 
 
-$onlyIf[$voiceID!=$clientID;<:incorrect:909966535769092156> <@$authorID>, você precisa estar no mesmo canal de voz que o bot!]	
-$onlyIf[$queueLength!=0;<:incorrect:909966535769092156> <@$authorID>, não possui nenhuma música na queue!]
+$onlyIf[$voiceID!=$clientID;<a:nao:926052919483179008> <@$authorID>, você precisa estar conectado no mesmo canal de voz que o bot!]	
+$onlyIf[$queueLength!=0;<a:nao:926052919483179008> <@$authorID>, não possui nenhuma música na queue!]
 `
 }
