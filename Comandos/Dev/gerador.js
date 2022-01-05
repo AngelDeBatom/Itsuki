@@ -10,6 +10,6 @@ Gerando...
 Gerando...
 $endelseif
 $endif
-$onlyForIDs[927608780169031751;]
+$onlyForIDs[927608780169031751;925929573684744223;]
 `
 }
