@@ -59,7 +59,7 @@ onlyforchannel: "$channelID",
 afktime: "",
 afk: "false",
 afkreason: "null",
-embedcolor: "BD6E35",
+embedcolor: "#970045",
 extrovertido: "desligado"
 })
 
