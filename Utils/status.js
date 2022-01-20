@@ -1,12 +1,12 @@
 module.exports = (bot) => {
 bot.status({
-text: "$getServerVar[prefix]help・ $pingws",
+text: "bbb = big bots brazil",
 type: "LISTENING",
 status: "online",
 time: 12
 })
 bot.status({
-text: "$getServerVar[prefix]help・ $pingws",
+text: "🥂 Uma nova era se inicia!",
 type: "LISTENING",
 status: "online",
 time: 12
