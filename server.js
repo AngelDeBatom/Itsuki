@@ -54,12 +54,12 @@ bot.onJoined();
 bot.onLeave();
 
 bot.variables({
-prefix: "?",
+prefix: "N!",
 onlyforchannel: "$channelID",
 afktime: "",
 afk: "false",
 afkreason: "null",
-embedcolor: "ORANGE",
+embedcolor: "0ADEBF",
 extrovertido: "desligado"
 })
 
