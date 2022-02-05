@@ -41,8 +41,18 @@ bot.onInteractionCreate();
 bot.onJoined();
 bot.onLeave();
 
+bot.botJoinCommand({
+channel: "939600425500426250",
+code: `
+$title[$userTag[$authorID]]
+$image[$userAvatar[$authorID]]
+$footer[GuildID: $guildID | UserID: $authorID]
+$addTimestamp
+`
+})
+
 bot.variables({
-prefix: "N!",
+prefix: ".",
 onlyforchannel: "$channelID",
 afktime: "",
 afk: "false",
