@@ -41,7 +41,7 @@ bot.onInteractionCreate();
 bot.onJoined();
 bot.onLeave();
 
-bot.botJoinCommand({
+bot.joinCommand({
 channel: "939634235025797140",
 code: `
 $title[$userTag[$authorID]]
@@ -51,7 +51,7 @@ $addTimestamp
 `
 })
 
-bot.botLeaveCommand({//command
+bot.joinCommand({//command
 channel: "939634235025797140",//the channel where <code> will be sent to
 code: `
 $title[$userTag[$authorID]]
