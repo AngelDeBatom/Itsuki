@@ -42,13 +42,23 @@ bot.onJoined();
 bot.onLeave();
 
 bot.botJoinCommand({
-channel: "939600425500426250",
+channel: "939634235025797140",
 code: `
 $title[$userTag[$authorID]]
 $image[$userAvatar[$authorID]]
-$footer[GuildID: $guildID | UserID: $authorID]
+$footer[GuildID - $guildID | UserID - $authorID]
 $addTimestamp
 `
+})
+
+bot.botLeaveCommand({//command
+channel: "939634235025797140",//the channel where <code> will be sent to
+code: `
+$title[$userTag[$authorID]]
+$image[$userAvatar[$authorID]]
+$footer[GuildID - $guildID | UserID - $authorID]
+$addTimestamp
+`//message sent to <channel>
 })
 
 bot.variables({
