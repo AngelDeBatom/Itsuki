@@ -18,7 +18,7 @@ shardAmount: 2,
 autoUpdate: false,
 fetchInvites: true,
 suppressAllErrors: true,
-\*db: database,*\
+*\db: database,\*
 intents: "all",
 debugs:{
 interpreter: true
