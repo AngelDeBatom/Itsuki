@@ -51,7 +51,7 @@ $addTimestamp
 `
 })
 
-bot.joinCommand({//command
+bot.leaveCommand({//command
 channel: "939634235025797140",//the channel where <code> will be sent to
 code: `
 $title[$userTag[$authorID]]
