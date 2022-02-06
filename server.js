@@ -47,6 +47,7 @@ code: `
 $title[$userTag[$authorID]]
 $image[$userAvatar[$authorID]]
 $footer[GuildID - $guildID | UserID - $authorID]
+$color[RANDOM]
 $addTimestamp
 `
 })
@@ -57,6 +58,7 @@ code: `
 $title[$userTag[$authorID]]
 $image[$userAvatar[$authorID]]
 $footer[GuildID - $guildID | UserID - $authorID]
+$color[RANDOM]
 $addTimestamp
 `//message sent to <channel>
 })
