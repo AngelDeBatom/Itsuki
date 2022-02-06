@@ -42,7 +42,7 @@ bot.onJoined();
 bot.onLeave();
 
 bot.joinCommand({
-channel: "939634235025797140",
+channel: "939669669558763560",
 code: `
 $title[$userTag[$authorID]]
 $image[$userAvatar[$authorID]]
@@ -52,7 +52,7 @@ $addTimestamp
 })
 
 bot.leaveCommand({//command
-channel: "939634235025797140",//the channel where <code> will be sent to
+channel: "939669669558763560",//the channel where <code> will be sent to
 code: `
 $title[$userTag[$authorID]]
 $image[$userAvatar[$authorID]]
