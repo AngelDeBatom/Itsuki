@@ -10,14 +10,14 @@ $apiMessage[$channelID;<@$authorID>;
 Olá **$username**, aqui estão algumas informações sobre mim.
 
  **Informações**
-> 👑 Criador \`$userTag[$botownerid]\`
+> 👑 Criadores \`$userTag[$botownerid]\` & \`$userTag[933559392786350091]\`
 > 📌 Prefixo \`Guilda: $getServerVar[prefix] || Padrão: . \`
 > 👥 Usuários \`$allMembersCount\`
 > 💙 Guildas \`$serverCount\`
  **Estatísticas**
 > ⏰ Uptime \`$uptime\`
 > 🛰️ Ping \`$pingms\`
-> 📆 Data de criação \`5 de outubro de 2021 (5.10.2021)\`
+> 📆 Data de criação \`5 de fevereiro de 2022 (5.2.2022)\`
 }
 ;{actionRow:Convide-me,2,5,https\\://discord.com/api/oauth2/authorize?client_id=$clientID&permissions=8&scope=bot:Suporte,2,5,https\\://discord.gg/};;no]
 `
