@@ -19,7 +19,7 @@ type: "musicStartCommand",
 channel: "$channelID",      
 code: `
 $suppressErrors[]
-$setVar[lastsongplayed;[$songInfo[title]]($songInfo[url])]
+$setVar[lastsongplayed;[$songInfo[title]]($songInfo[url]) user who added the song: $userTag[$songInfo[userID]]\`($songInfo[userID])\`]
 $description[<a:disco:941366579042598962> Tocando agora: [$songInfo[title]]($songInfo[url])]
 `
 }]
