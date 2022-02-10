@@ -20,6 +20,6 @@ type: "musicStartCommand",
 channel: "$channelID",      
 code: `
 $suppressErrors[]
-$description[Tocando agora: [$songInfo[title]]($songInfo[url])]
+$description[<a:disco:941366579042598962> Tocando agora: [$songInfo[title]]($songInfo[url])]
 `
 }]
