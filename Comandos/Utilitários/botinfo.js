@@ -20,6 +20,7 @@ Olá **$username**, aqui estão algumas informações sobre mim.
 > 📆 Data de criação \`5 de fevereiro de 2022 (5.2.2022)\`
  **Global**
 > 🎵 Last Sound Played **$getvar[lastsongplayed]**
+> 🚫 Last Added To BlackList **INCOMPLETE SYSTEM**
 }
 ;{actionRow:Convide-me,2,5,https\\://discord.com/api/oauth2/authorize?client_id=$clientID&permissions=8&scope=bot:Suporte,2,5,https\\://discord.gg/wNCr4BTrZv};;no]
 `
