@@ -33,7 +33,7 @@ bot.loadCommands("./Comandos/")
 
 //Ativando as respostas do bot
 bot.onMessage({
-  repondToBots: true, //Desativando responder a bot
+  repondToBots: false, //Desativando responder a bot
   guildOnly: true //desativando responder na DM
 })
 
