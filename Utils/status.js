@@ -6,9 +6,9 @@ status: "online",
 time: 12
 })
 bot.status({
-text: "🥂 Uma nova era se inicia!",
+text: "Real Music ➣ Música de verdade",
 type: "LISTENING",
-status: "online",
+status: "dnd",
 time: 12
 })
 }
