@@ -11,4 +11,10 @@ type: "LISTENING",
 status: "dnd",
 time: 12
 })
+bot.status({
+text: "Last song played: Chefin 212",
+type: "STREAMING",
+status: "dnd",
+time: 12
+})
 }
