@@ -52,7 +52,7 @@ $addTimestamp
 `
 })
 
-*/
+/*
 bot.command({
 name: "$alwaysExecute",
 code: `
