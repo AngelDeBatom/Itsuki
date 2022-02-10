@@ -65,7 +65,7 @@ $addTimestamp
 })
 
 bot.variables({
-prefix: ".",
+prefix: "real",
 onlyforchannel: "$channelID",
 afktime: "",
 afk: "false",
