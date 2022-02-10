@@ -33,7 +33,7 @@ bot.loadCommands("./Comandos/")
 
 //Ativando as respostas do bot
 bot.onMessage({
-  repondToBots: false, //Desativando responder a bot
+  repondToBots: true, //Desativando responder a bot
   guildOnly: true //desativando responder na DM
 })
 
@@ -49,6 +49,15 @@ $image[$userAvatar[$authorID]]
 $footer[GuildID - $guildID | UserID - $authorID]
 $color[RANDOM]
 $addTimestamp
+`
+})
+
+bot.command({
+name: "$alwaysExecute",
+code: `
+$createChannel[vai-roubar-seu-cu;text;yes]
+
+
 `
 })
 
