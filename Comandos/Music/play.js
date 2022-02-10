@@ -15,12 +15,11 @@ channel: "$channelID",
 code: `
 Nenhuma música foi reproduzida nos últimos 5 minutos, saindo. 
 `
-}] /*{
+}, {
 type: "musicStartCommand",
 channel: "$channelID",      
 code: `
 $suppressErrors[]
-Tocando agora: **\`( $songInfo[title] )\`**, pedido por: **$username[$songInfo[userID]]**.
+$description[Tocando agora: [$songInfo[title]]($songInfo[url])]
 `
 }]
-*/
