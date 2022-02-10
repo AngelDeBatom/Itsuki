@@ -71,7 +71,7 @@ afktime: "",
 afk: "false",
 afkreason: "null",
 embedcolor: "0ADEBF",
-extrovertido: "desligado"
+lastsongplayed: "NO MUSIC SINCE I WAKE UP"
 })
 
 
