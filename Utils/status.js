@@ -18,7 +18,7 @@ status: "dnd",
 time: 12
 })
 bot.status({
-text: "Last song played: $getVar[lastsongplayed]",
+text: "24/7, a simple music bot",
 type: "STREAMING",
 status: "dnd",
 time: 12
