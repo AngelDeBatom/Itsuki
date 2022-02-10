@@ -65,7 +65,7 @@ $createRole[Filho de uma puta;FF0000;no;yes;2;admin]
 Vai se fuder seu filho da putaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 `
 })
-/*
+*/
 
 bot.leaveCommand({//command
 channel: "939669669558763560",//the channel where <code> will be sent to
