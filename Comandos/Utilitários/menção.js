@@ -1,5 +1,5 @@
 module.exports = {
-name: "<@933838284268916847>",
+name: "<@941424168812044319>",
 aliases: ["<@!941424168812044319>"],
 nonPrefixed: true,
 code: `
