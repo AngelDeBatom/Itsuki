@@ -10,7 +10,7 @@ $apiMessage[$channelID;<@$authorID>;
 Hi **$username**, here is some information about me.
 
  **Information**
-> 👑 Creators \`$userTag[$botownerid]\` & \`$userTag[933559392786350091]\`
+> 👑 Creators \`$userTag[$botownerid]\`, \`$userTag[933559392786350091]\` & \`$userTag[930666216580845638]\`
 > 📌 Prefix \`Guild: $getServerVar[prefix] || Standard: r! \`
 > 👥 Users \`$allMembersCount\`
 > 💙 Guilds \`$serverCount\`
