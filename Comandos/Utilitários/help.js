@@ -1,16 +1,16 @@
 module.exports = {
 name: "help",
-aliases: ["comandos"],
+aliases: ["commands"],
 code: `
 <@$authorID>
-$title[Painel de Ajuda]
+$title[Help Panel]
 $description[
-**🧠 Utilitários**
+**🧠 Utilities**
 **invite \`|\` ping \`|\` botinfo \`|\`afk**
-**🎶 Música**
+**🎶 Music**
 **tocar \`|\` skip \`|\` queue \`|\` loop \`|\` pause \`|\` stop \`|\` resume \`|\` disconnect \`|\` join**
 ]
-$footer[Servidor hospedado no fragmento #$shardID]
+$footer[Server hosted in #$shardID shard]
 $addtimestamp
 $color[$getServerVar[embedcolor]]
 `
