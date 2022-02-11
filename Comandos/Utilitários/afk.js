@@ -4,7 +4,7 @@ module.exports = [{
 $setGlobalUserVar[afktime;$dateStamp]
 $setGlobalUserVar[afk;true;$authorID]
 $setGlobalUserVar[afkreason;$replaceText[$replaceText[$checkCondition[$message==];true;**The reason was not provided.**];false;$message];$authorID]
-<:correct:910318012945559594> <@$authorID>, now you are afk, reason: \`$replaceText[$replaceText[$replaceText[$replaceText[$checkCondition[$message==];true;**O motivo não foi fornecido.**];false;$message];\`;];*;]\`, caso você digite algo no chat o afk será desativado!
+<:correct:910318012945559594> <@$authorID>, now you are afk, reason: \`$replaceText[$replaceText[$replaceText[$replaceText[$checkCondition[$message==];true;**O motivo não foi fornecido.**];false;$message];\`;];*;]\`, if you type something in the chat the afk will be disabled!
 $onlyIf[$charCount[$message]<150;<:incorrect:909966535769092156> <@$authorID>, the afk reason cannot contain more than **150** characters!]
 `
 }, {
