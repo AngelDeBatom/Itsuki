@@ -7,21 +7,21 @@ $apiMessage[$channelID;<@$authorID>;
 {author:Bot Info:$authorAvatar:}
 {color:FFFFFF}
 {description:
-Olá **$username**, aqui estão algumas informações sobre mim.
+Hi **$username**, here is some information about me.
 
- **Informações**
-> 👑 Criadores \`$userTag[$botownerid]\` & \`$userTag[933559392786350091]\`
-> 📌 Prefixo \`Guilda: $getServerVar[prefix] || Padrão: . \`
-> 👥 Usuários \`$allMembersCount\`
-> 💙 Guildas \`$serverCount\`
- **Estatísticas**
+ **Information**
+> 👑 Creators \`$userTag[$botownerid]\` & \`$userTag[933559392786350091]\`
+> 📌 Prefix \`Guild: $getServerVar[prefix] || Standard: r! \`
+> 👥 Users \`$allMembersCount\`
+> 💙 Guilds \`$serverCount\`
+ **Statistics**
 > ⏰ Uptime \`$uptime\`
 > 🛰️ Ping \`$pingms\`
-> 📆 Data de criação \`5 de fevereiro de 2022 (5.2.2022)\`
+> 📆 Creation Date \`5 de fevereiro de 2022 (5.2.2022)\`
  **Global**
 > 🎵 Last Sound Played **$getvar[lastsongplayed]**
 > 🚫 Last Added To BlackList **INCOMPLETE SYSTEM**
 }
-;{actionRow:Convide-me,2,5,https\\://discord.com/api/oauth2/authorize?client_id=$clientID&permissions=8&scope=bot:Suporte,2,5,https\\://discord.gg/wNCr4BTrZv};;no]
+;{actionRow:Invite me,2,5,https\\://discord.com/api/oauth2/authorize?client_id=$clientID&permissions=8&scope=bot:Support,2,5,https\\://discord.gg/wNCr4BTrZv};;no]
 `
 }
