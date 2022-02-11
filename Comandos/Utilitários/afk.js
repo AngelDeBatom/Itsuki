@@ -3,14 +3,14 @@ module.exports = [{
   code: `
 $setGlobalUserVar[afktime;$dateStamp]
 $setGlobalUserVar[afk;true;$authorID]
-$setGlobalUserVar[afkreason;$replaceText[$replaceText[$checkCondition[$message==];true;**O motivo não foi fornecido.**];false;$message];$authorID]
-<:correct:910318012945559594> <@$authorID>, agora você está afk, motivo: \`$replaceText[$replaceText[$replaceText[$replaceText[$checkCondition[$message==];true;**O motivo não foi fornecido.**];false;$message];\`;];*;]\`, caso você digite algo no chat o afk será desativado!
-$onlyIf[$charCount[$message]<150;<:incorrect:909966535769092156> <@$authorID>, o motivo do afk não pode conter mais de **150** caracteres!]
+$setGlobalUserVar[afkreason;$replaceText[$replaceText[$checkCondition[$message==];true;**The reason was not provided.**];false;$message];$authorID]
+<:correct:910318012945559594> <@$authorID>, now you are afk, reason: \`$replaceText[$replaceText[$replaceText[$replaceText[$checkCondition[$message==];true;**O motivo não foi fornecido.**];false;$message];\`;];*;]\`, caso você digite algo no chat o afk será desativado!
+$onlyIf[$charCount[$message]<150;<:incorrect:909966535769092156> <@$authorID>, the afk reason cannot contain more than **150** characters!]
 `
 }, {
 name: "$alwaysExecute",
 code: `
-$reply[$messageID;😴 <@$authorID>, o usuário está afk, motivo: \`$replaceText[$replaceText[$getGlobalUserVar[afkreason;$mentioned[1]];\`;];*;]\` **Tempo afk:** $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$parseDate[$sub[$datestamp;$getGlobalUserVar[afktime;$mentioned[1]]];time];seconds;segundos];second;segundo];minute;minuto];minutes;minutos];hour;hora];hours;horas];day;dia];days;dias];and;e];yes]
+$reply[$messageID;😴 <@$authorID>, the user is afk, reason: \`$replaceText[$replaceText[$getGlobalUserVar[afkreason;$mentioned[1]];\`;];*;]\` **Afk time:** $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$parseDate[$sub[$datestamp;$getGlobalUserVar[afktime;$mentioned[1]]];time];seconds;seconds];second;second];minute;minute];minutes;minutes];hour;hour];hours;hours];day;day];days;days];and;and];yes]
 $onlyIf[$mentioned[1]!=;]
 $onlyIf[$getGlobalUserVar[afk;$mentioned[1]]==true;]
 $onlyIf[$isBot[$authorID]==false;]
@@ -21,7 +21,7 @@ name: "$alwaysExecute",
 code: `
 $setGlobalUserVar[afktime;]
 $setGlobalUserVar[afk;null;$authorID]
-$reply[$messageID;😪 <@$authorID>, seu afk foi desativado, bem-vindo(a) de volta! **Tempo afk:** $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$parseDate[$sub[$datestamp;$getGlobalUserVar[afktime]];time];seconds;segundos];second;segundo];minute;minuto];minutes;minutos];hour;hora];hours;horas];day;dia];days;dias];and;e];yes]
+$reply[$messageID;😪 <@$authorID>, your afk has been disabled, welcome back! **Afk time:** $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$parseDate[$sub[$datestamp;$getGlobalUserVar[afktime]];time];seconds;seconds];second;second];minute;minute];minutes;minutes];hour;hour];hours;hours];day;day];days;days];and;and];yes]
 $deleteIn[5s]
 $onlyIf[$getGlobalUserVar[afk;$authorID]==true;]
 $onlyif[$checkcontains[$message;$getservervar[prefix]afk]==false;]
